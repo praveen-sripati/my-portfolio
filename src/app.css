@@ -4,6 +4,38 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	/*========== Colors ==========*/
+	/* Change favorite color */
+	--ps-hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+	/* HSL color mode */
+	--ps-first-color: hsl(var(--ps-hue-color), 69%, 61%);
+	--ps-first-color-second: hsl(var(--ps-hue-color), 69%, 61%);
+	--ps-first-color-alt: hsl(var(--ps-hue-color), 57%, 53%);
+	--ps-first-color-lighter: hsl(var(--ps-hue-color), 92%, 85%);
+	--ps-title-color: hsl(var(--ps-hue-color), 8%, 15%);
+	--ps-text-color: hsl(var(--ps-hue-color), 8%, 45%);
+	--ps-text-color-light: hsl(var(--ps-hue-color), 8%, 65%);
+	--ps-input-color: hsl(var(--ps-hue-color), 70%, 96%);
+	--ps-body-color: hsl(var(--ps-hue-color), 60%, 99%);
+	--ps-container-color: #fff;
+	--ps-scroll-bar-color: hsl(var(--ps-hue-color), 12%, 90%);
+	--ps-scroll-thumb-color: hsl(var(--ps-hue-color), 12%, 80%);
+
+  /*========== Font and typography ==========*/
+  --ps-body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --ps-big-font-size: 2rem;
+  --ps-h1-font-size: 1.5rem;
+  --ps-h2-font-size: 1.25rem;
+  --ps-h3-font-size: 1.125rem;
+  --ps-normal-font-size: .938rem;
+  --ps-small-font-size: .813rem;
+  --ps-smaller-font-size: .75rem;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -16,4 +48,5 @@ html {
 
 body {
 	@apply bg-white dark:bg-black text-black dark:text-white text-center;
+	font-family: var(--ps-body-font);
 }

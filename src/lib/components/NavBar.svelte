@@ -1,0 +1,108 @@
+<header class="ps-header">
+	<nav class="ps-nav ps-container">
+		<a href="#home" class="ps-nav__logo">Praveen</a>
+		<div class="ps-nav__menu" id="nav-menu">
+			<ul class="ps-nav__list ps-grid">
+				<li class="ps-nav__item">
+					<a href="#home" class="ps-nav__link">
+						<i class="uil uil-estate ps-nav__icon" /> Home
+					</a>
+				</li>
+				<li class="ps-nav__item">
+					<a href="#about" class="ps-nav__link">
+						<i class="uil uil-user ps-nav__icon" /> About
+					</a>
+				</li>
+				<li class="ps-nav__item">
+					<a href="#skills" class="ps-nav__link">
+						<i class="uil uil-file-alt ps-nav__icon" /> Skills
+					</a>
+				</li>
+				<li class="ps-nav__item">
+					<a href="#services" class="ps-nav__link">
+						<i class="uil uil-briefcase-alt ps-nav__icon" /> Services
+					</a>
+				</li>
+				<li class="ps-nav__item">
+					<a href="#portfolio" class="ps-nav__link">
+						<i class="uil uil-scenery ps-nav__icon" /> Portfolio
+					</a>
+				</li>
+
+				<li class="ps-nav__item">
+					<a href="#contact" class="ps-nav__link">
+						<i class="uil uil-message ps-nav__icon" /> Contact me
+					</a>
+				</li>
+			</ul>
+			<i class="uil uil-times ps-nav__close" id="ps-nav-close" />
+		</div>
+		<div class="ps-nav__btns">
+			<div class="ps-nav__toggle" id="ps-nav-toggle">
+				<i class="uil uil-apps" />
+			</div>
+		</div>
+	</nav>
+</header>
+
+<style lang="scss">
+	.ps-container {
+		@apply max-w-3xl ml-6 mr-6;
+	}
+
+	.ps-grid {
+		@apply grid gap-6;
+	}
+
+	.ps-header {
+		@apply fixed bottom-0 left-0 w-full z-[100] bg-ps-body-color;
+	}
+
+	.ps-nav {
+		@apply max-w-5xl h-12 flex justify-between items-center;
+	}
+
+	.ps-nav__logo,
+	.ps-nav__toggle {
+		@apply text-ps-title-color font-medium;
+	}
+
+	.ps-nav__logo:hover {
+		@apply text-ps-first-color;
+	}
+
+	.ps-nav__toggle {
+		@apply text-xl cursor-pointer;
+	}
+	.ps-nav__toggle:hover {
+		@apply text-ps-first-color;
+	}
+
+	.ps-nav__menu {
+		@apply fixed bottom-0 left-0 w-[100%] bg-ps-body-color pl-8 py-6 pr-16 rounded-t-[2rem] rounded-b-none duration-[.3s] bottom-[-100%];
+		box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.15);
+	}
+
+	.ps-nav__list {
+		@apply grid-cols-3 gap-8;
+	}
+	.ps-nav__link {
+		@apply flex flex-col items-center font-medium text-ps-title-color text-ps-small-font-size;
+	}
+
+	.ps-nav__link:hover {
+		@apply text-ps-first-color;
+	}
+
+	.ps-nav__icon {
+		@apply text-xl;
+	}
+
+	.ps-nav__close {
+		@apply absolute right-5 bottom-2 text-2xl cursor-pointer text-ps-first-color;
+	}
+
+	.ps-nav__close:hover {
+		@apply text-ps-first-color-alt;
+	}
+</style>
