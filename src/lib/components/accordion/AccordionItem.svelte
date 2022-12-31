@@ -20,28 +20,22 @@
 	</button>
 
 	{#if open}
-		<div class="details" transition:slide={{ duration: 150, easing: quadInOut }}>
+		<div class="ps-details" transition:slide={{ duration: 150, easing: quadInOut }}>
 			<slot name="details" />
 		</div>
 	{/if}
 </div>
 
 <style>
-	.accordion {
+	.ps-accordion {
 		margin: 0;
 	}
 
-	.header {
-		display: flex;
+	.ps-header {
 		width: 100%;
-		text-align: left;
 	}
 
-	.header .text {
-		flex: 1;
-	}
-
-	.details {
+	.ps-details {
 		background-color: transparent;
 		padding: 0.5rem;
 		margin-bottom: 1rem;
