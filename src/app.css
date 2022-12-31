@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 @tailwind base;
+
+@layer base {
+  h1 {
+    font-size: var(--h1-font-size);
+  }
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+  h3 {
+    font-size: var(--h3-font-size);
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -23,10 +36,8 @@
 	--ps-scroll-bar-color: hsl(var(--ps-hue-color), 12%, 90%);
 	--ps-scroll-thumb-color: hsl(var(--ps-hue-color), 12%, 80%);
 
-  /*========== Font and typography ==========*/
-  --ps-body-font: 'Poppins', sans-serif;
-
-  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+	/*========== Font and typography ==========*/
+	--ps-body-font: 'Poppins', sans-serif;
   --ps-big-font-size: 2rem;
   --ps-h1-font-size: 1.5rem;
   --ps-h2-font-size: 1.25rem;
@@ -47,6 +58,66 @@ html {
 }
 
 body {
-	@apply bg-white dark:bg-black text-black dark:text-white text-center;
+	@apply bg-white dark:bg-black text-black dark:text-white;
 	font-family: var(--ps-body-font);
 }
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--ps-title-color);
+	font-weight: 600;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Re-usable css starts */
+.ps-container {
+	@apply max-w-3xl ml-6 mr-6;
+}
+
+.ps-grid {
+	@apply grid gap-6;
+}
+
+.ps-section {
+  @apply pt-8 px-0 pb-16;
+}
+
+.ps-section__title {
+  @apply text-ps-h1-font-size text-ps-title-color;
+}
+
+.ps-section__subtitle {
+  @apply block text-ps-small-font-size mb-12;
+}
+
+.ps-section__title, 
+.ps-section__subtitle {
+  @apply text-center;
+}
+
+.ps-button {
+  @apply inline-block bg-ps-first-color text-white p-4 rounded-lg font-medium;
+}
+
+.ps-button__icon {
+  @apply text-xl ml-2 duration-300;
+}
+
+.ps-button__flex {
+  @apply inline-flex items-center;
+}
+/* Re-usable css ends */

@@ -1,3 +1,15 @@
-<h1 class="text-3xl font-bold underline bg-white dark:bg-black">
-  Hello world! <i class="uil uil-airplay"></i>
-</h1>
+<script>
+	import { Home, About, Skills } from '$lib/components/index';
+</script>
+
+<!-- Home -->
+<Home />
+
+<!-- About -->
+<About />
+
+<!-- Skills -->
+<Skills />
+
+<style lang="scss">
+</style>

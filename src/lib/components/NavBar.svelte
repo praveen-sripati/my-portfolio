@@ -1,44 +1,49 @@
+<script>
+	let showMenu = true;
+	const handleMenuToggle = () => (showMenu = !showMenu);
+</script>
+
 <header class="ps-header">
 	<nav class="ps-nav ps-container">
 		<a href="#home" class="ps-nav__logo">Praveen</a>
-		<div class="ps-nav__menu" id="nav-menu">
+		<div class="ps-nav__menu {showMenu ? 'ps-show-menu': ''}" id="nav-menu" >
 			<ul class="ps-nav__list ps-grid">
 				<li class="ps-nav__item">
-					<a href="#home" class="ps-nav__link">
+					<a href="#home" class="ps-nav__link" on:click={handleMenuToggle}>
 						<i class="uil uil-estate ps-nav__icon" /> Home
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#about" class="ps-nav__link">
+					<a href="#about" class="ps-nav__link" on:click={handleMenuToggle}>
 						<i class="uil uil-user ps-nav__icon" /> About
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#skills" class="ps-nav__link">
+					<a href="#skills" class="ps-nav__link" on:click={handleMenuToggle}>
 						<i class="uil uil-file-alt ps-nav__icon" /> Skills
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#services" class="ps-nav__link">
+					<a href="#services" class="ps-nav__link" on:click={handleMenuToggle}>
 						<i class="uil uil-briefcase-alt ps-nav__icon" /> Services
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#portfolio" class="ps-nav__link">
+					<a href="#portfolio" class="ps-nav__link" on:click={handleMenuToggle}>
 						<i class="uil uil-scenery ps-nav__icon" /> Portfolio
 					</a>
 				</li>
 
 				<li class="ps-nav__item">
-					<a href="#contact" class="ps-nav__link">
+					<a href="#contact" class="ps-nav__link" on:click={handleMenuToggle}>
 						<i class="uil uil-message ps-nav__icon" /> Contact me
 					</a>
 				</li>
 			</ul>
-			<i class="uil uil-times ps-nav__close" id="ps-nav-close" />
+			<i class="uil uil-times ps-nav__close" id="ps-nav-close" on:click={handleMenuToggle}/>
 		</div>
 		<div class="ps-nav__btns">
-			<div class="ps-nav__toggle" id="ps-nav-toggle">
+			<div class="ps-nav__toggle" id="ps-nav-toggle" on:click={handleMenuToggle}>
 				<i class="uil uil-apps" />
 			</div>
 		</div>
@@ -46,14 +51,6 @@
 </header>
 
 <style lang="scss">
-	.ps-container {
-		@apply max-w-3xl ml-6 mr-6;
-	}
-
-	.ps-grid {
-		@apply grid gap-6;
-	}
-
 	.ps-header {
 		@apply fixed bottom-0 left-0 w-full z-[100] bg-ps-body-color;
 	}
@@ -105,4 +102,8 @@
 	.ps-nav__close:hover {
 		@apply text-ps-first-color-alt;
 	}
+
+  .ps-show-menu {
+    @apply bottom-0
+  }
 </style>

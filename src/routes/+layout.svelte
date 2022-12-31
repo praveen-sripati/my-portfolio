@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
-  import NavBar from '$lib/components/NavBar.svelte';
+	import { ThemeSwitch, NavBar } from '$lib/components/index';
 </script>
 
 <ThemeSwitch />
