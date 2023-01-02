@@ -12,78 +12,73 @@
 	import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 </script>
 
-<Swiper
-	cssMode={true}
-	navigation={true}
-	pagination={true}
-	mousewheel={true}
-	keyboard={true}
-	modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-	class="mySwiper"
->
-	<SwiperSlide>Slide 1</SwiperSlide>
-  <SwiperSlide>Slide 2</SwiperSlide>
-  <SwiperSlide>Slide 3</SwiperSlide>
-  <SwiperSlide>Slide 4</SwiperSlide>
-</Swiper>
-
-<section class="ps-portfolio ps-section">
+<section class="ps-portfolio ps-section" id="portfolio">
 	<h2 class="ps-section__title">Portfolio</h2>
 	<span class="ps-section__subtitle">What i offer</span>
-	<div class="ps-portfolio__container ps-container ps-grid">
-		<div>
-			<!-- Portfolio 1 -->
-			<div class="ps-portfolio__content ps-grid">
-				<img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
-				<div class="ps-portfolio__data">
-					<h3 class="ps-portfolio__title">Modern Website</h3>
-					<p class="ps-portfolio__description">
-						Website adaptable to all devices, with ui components and animated interactions.
-					</p>
-					<a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
-						Demo
-						<i class="uil uil-arrow-right ps-button__icon" />
-					</a>
-				</div>
-			</div>
-
-			<!-- Portfolio 2 -->
-			<div class="ps-portfolio__content ps-grid">
-				<img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
-				<div class="ps-portfolio__data">
-					<h3 class="ps-portfolio__title">Something</h3>
-					<p class="ps-portfolio__description">
-						Website adaptable to all devices, with ui components and animated interactions.
-					</p>
-					<a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
-						Demo
-						<i class="uil uil-arrow-right ps-button__icon" />
-					</a>
-				</div>
-			</div>
-
-			<!-- Portfolio 3 -->
-			<div class="ps-portfolio__content ps-grid">
-				<img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
-				<div class="ps-portfolio__data">
-					<h3 class="ps-portfolio__title">Just like this</h3>
-					<p class="ps-portfolio__description">
-						Website adaptable to all devices, with ui components and animated interactions.
-					</p>
-					<a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
-						Demo
-						<i class="uil uil-arrow-right ps-button__icon" />
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="ps-portfolio__container ps-container">
+    <Swiper
+      cssMode={true}
+      navigation={true}
+      pagination={true}
+      mousewheel={true}
+      keyboard={true}
+      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+      class="mySwiper"
+    >
+      <SwiperSlide>
+        <!-- Portfolio 1 -->
+        <div class="ps-portfolio__content ps-grid">
+          <img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
+          <div class="ps-portfolio__data">
+            <h3 class="ps-portfolio__title">Modern Website</h3>
+            <p class="ps-portfolio__description">
+              Website adaptable to all devices, with ui components and animated interactions.
+            </p>
+            <a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
+              Demo
+              <i class="uil uil-arrow-right ps-button__icon" />
+            </a>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <!-- Portfolio 2 -->
+        <div class="ps-portfolio__content ps-grid">
+          <img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
+          <div class="ps-portfolio__data">
+            <h3 class="ps-portfolio__title">Something</h3>
+            <p class="ps-portfolio__description">
+              Website adaptable to all devices, with ui components and animated interactions.
+            </p>
+            <a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
+              Demo
+              <i class="uil uil-arrow-right ps-button__icon" />
+            </a>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <!-- Portfolio 3 -->
+        <div class="ps-portfolio__content ps-grid">
+          <img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
+          <div class="ps-portfolio__data">
+            <h3 class="ps-portfolio__title">Just like this</h3>
+            <p class="ps-portfolio__description">
+              Website adaptable to all devices, with ui components and animated interactions.
+            </p>
+            <a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
+              Demo
+              <i class="uil uil-arrow-right ps-button__icon" />
+            </a>
+          </div>
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </div>
 </section>
 
+
 <style lang="scss">
-	.ps-portfolio__container {
-		@apply overflow-auto;
-	}
 
 	.ps-portfolio__content {
 		@apply py-0 px-6;

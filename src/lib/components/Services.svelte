@@ -7,7 +7,7 @@
 	let showBrandingModal = false;
 </script>
 
-<section class="ps-services ps-section">
+<section class="ps-services ps-section" id="services">
 	<h1 class="ps-section__title">Services</h1>
 	<span class="ps-section__subtitle">What i offer</span>
 
