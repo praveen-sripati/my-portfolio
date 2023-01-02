@@ -9,7 +9,7 @@
 	}
 </script>
 
-<section class="ps-qualification ps-section">
+<section class="ps-qualification ps-section" id="qualifications">
 	<h2 class="ps-section__title">Qualification</h2>
 	<span class="ps-section__subtitle">My personal journey</span>
 	<div class="ps-qualification__container ps-container">

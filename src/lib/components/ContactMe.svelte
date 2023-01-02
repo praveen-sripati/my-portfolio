@@ -1,6 +1,6 @@
 <section class="ps-contact ps-section" id="contact">
-	<h2 class="ps-section__title">Portfolio</h2>
-	<span class="ps-section__subtitle">What i offer</span>
+	<h2 class="ps-section__title">Contact Me</h2>
+	<span class="ps-section__subtitle">Get in touch</span>
 	<div class="ps-contact__container ps-container ps-grid">
 		<div>
 			<div class="ps-contact__information">

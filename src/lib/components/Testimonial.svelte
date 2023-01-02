@@ -14,7 +14,7 @@
 	import { Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
 </script>
 
-<section class="ps-testimonial ps-section">
+<section class="ps-testimonial ps-section" id="testimonial">
 	<h2 class="ps-section__title">Testimonial</h2>
 	<span class="ps-section__subtitle">My client saying</span>
 	<div class="ps-testimonial__container ps-container">
@@ -31,7 +31,7 @@
 				}
 			}}
 			keyboard={true}
-			autoplay={{ delay: 5000 }}
+			autoplay={true}
 		>
 			<SwiperSlide>
 				<!-- Testimonial 1 -->

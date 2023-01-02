@@ -25,7 +25,7 @@
 			pagination={true}
       speed={2500}
 			mousewheel={true}
-      autoplay={{delay: 5000}}
+      autoplay={true}
 			keyboard={true}
 			modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
 		>
