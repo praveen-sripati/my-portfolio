@@ -120,4 +120,16 @@ img {
 .ps-button__flex {
   @apply inline-flex items-center;
 }
+
+.ps-button__small {
+  @apply py-3 px-4;
+}
+
+.ps-button__link {
+  @apply p-0 bg-transparent text-ps-first-color;
+}
+
+.ps-button__link:hover {
+  @apply bg-transparent text-ps-first-color-alt;
+}
 /* Re-usable css ends */

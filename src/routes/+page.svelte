@@ -1,5 +1,6 @@
 <script>
-	import { Home, About, Skills } from '$lib/components/index';
+	import { Home, About, Skills, Qualifications, Services } from '$lib/components/index';
+	import Portfolio from '$lib/components/Portfolio.svelte';
 </script>
 
 <!-- Home -->
@@ -11,5 +12,11 @@
 <!-- Skills -->
 <Skills />
 
-<style lang="scss">
-</style>
+<!-- Qualifications -->
+<Qualifications />
+
+<!-- Services -->
+<Services />
+
+<!-- Portfolio -->
+<Portfolio />
