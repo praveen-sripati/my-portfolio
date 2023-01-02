@@ -1,5 +1,6 @@
 <script>
-	import {
+	import Footer from '$lib/components/Footer.svelte';
+import {
 		Home,
 		About,
 		Skills,
@@ -7,7 +8,8 @@
 		Services,
 		Portfolio,
 		Projects,
-		Testimonial
+		Testimonial,
+		ContactMe
 	} from '$lib/components/index';
 </script>
 
@@ -34,3 +36,9 @@
 
 <!-- Testimonial -->
 <Testimonial />
+
+<!-- Contact Me -->
+<ContactMe />
+
+<!-- Footer -->
+<Footer />

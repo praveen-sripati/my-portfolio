@@ -6,9 +6,9 @@
 	import 'swiper/css';
 
 	import 'swiper/css/pagination';
-  import 'swiper/css/mousewheel';
-  import 'swiper/css/keyboard';
-  import 'swiper/css/autoplay';
+	import 'swiper/css/mousewheel';
+	import 'swiper/css/keyboard';
+	import 'swiper/css/autoplay';
 
 	// import required modules
 	import { Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
@@ -19,19 +19,19 @@
 	<span class="ps-section__subtitle">My client saying</span>
 	<div class="ps-testimonial__container ps-container">
 		<Swiper
-      modules={[Pagination, Mousewheel, Keyboard, Autoplay]}
+			modules={[Pagination, Mousewheel, Keyboard, Autoplay]}
 			cssMode={true}
 			grabCursor={true}
 			spaceBetween={48}
-      speed={5000}
+			speed={5000}
 			pagination={{ clickable: true, dynamicBullets: true }}
 			breakpoints={{
-        568: {
-          slidesPerView: 2
-        }
-      }}
+				568: {
+					slidesPerView: 2
+				}
+			}}
 			keyboard={true}
-      autoplay={{delay: 5000}}
+			autoplay={{ delay: 5000 }}
 		>
 			<SwiperSlide>
 				<!-- Testimonial 1 -->
@@ -118,15 +118,14 @@
 </section>
 
 <style lang="scss">
-
-  .ps-testimonial__container {
-    :global(.swiper-pagination .swiper-pagination-bullet-active) {
-      @apply bg-ps-first-color;
-    }
-  }
+	.ps-testimonial__container {
+		:global(.swiper-pagination .swiper-pagination-bullet-active) {
+			@apply bg-ps-first-color;
+		}
+	}
 
 	.ps-testimonial__data,
-	ps-testimonial__header {
+	.ps-testimonial__header {
 		@apply flex;
 	}
 

@@ -8,3 +8,5 @@ export { default as Services } from '$lib/components/Services.svelte';
 export { default as Portfolio } from '$lib/components/Portfolio.svelte';
 export { default as Projects } from '$lib/components/Projects.svelte';
 export { default as Testimonial } from '$lib/components/Testimonial.svelte';
+export { default as ContactMe } from '$lib/components/ContactMe.svelte';
+export { default as Footer } from '$lib/components/Footer.svelte';
