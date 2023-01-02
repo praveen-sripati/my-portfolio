@@ -125,6 +125,10 @@ img {
 	@apply py-3 px-4;
 }
 
+.ps-button__white {
+  @apply bg-white text-ps-first-color;
+}
+
 .ps-button__link {
 	@apply p-0 bg-transparent text-ps-first-color;
 }
@@ -134,7 +138,7 @@ img {
 }
 
 /* Override style of swiper slide arrows */
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
 	@apply text-ps-first-color !important;
 }
@@ -145,6 +149,6 @@ img {
 
 .swiper-pagination .swiper-pagination-bullet-active {
 	@apply bg-ps-first-color;
-}
+} */
 
 /* Re-usable css ends */

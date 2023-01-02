@@ -1,12 +1,14 @@
 <script lang="ts">
 	import portfolio from '$lib/assets/images/allu.png';
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
-
 	// Import Swiper styles
 	import 'swiper/css';
 
 	import 'swiper/css/navigation';
 	import 'swiper/css/pagination';
+  import 'swiper/css/mousewheel';
+  import 'swiper/css/keyboard';
+  import 'swiper/css/autoplay';
 
 	// import required modules
 	import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
@@ -16,12 +18,14 @@
 	<h2 class="ps-section__title">Portfolio</h2>
 	<span class="ps-section__subtitle">What i offer</span>
 	<div class="ps-portfolio__container ps-container">
+    
 		<Swiper
 			cssMode={true}
 			navigation={true}
 			pagination={true}
+      speed={2500}
 			mousewheel={true}
-      autoplay={true}
+      autoplay={{delay: 5000}}
 			keyboard={true}
 			modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
 		>
@@ -78,6 +82,21 @@
 </section>
 
 <style lang="scss">
+  .ps-portfolio__container {
+    /* Override style of swiper slide arrows */
+    :global(.swiper-button-prev), :global(.swiper-button-next) {
+      @apply text-ps-first-color;
+    }
+
+    :global(.swiper-horizontal > .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal) {
+      @apply -bottom-1;
+    }
+
+    :global(.swiper-pagination .swiper-pagination-bullet-active) {
+      @apply bg-ps-first-color;
+    }
+  }
+
 	.ps-portfolio__content {
 		@apply py-0 px-6;
 	}

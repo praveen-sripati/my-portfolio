@@ -1,6 +1,14 @@
 <script>
-	import { Home, About, Skills, Qualifications, Services } from '$lib/components/index';
-	import Portfolio from '$lib/components/Portfolio.svelte';
+	import {
+		Home,
+		About,
+		Skills,
+		Qualifications,
+		Services,
+		Portfolio,
+		Projects,
+		Testimonial
+	} from '$lib/components/index';
 </script>
 
 <!-- Home -->
@@ -20,3 +28,9 @@
 
 <!-- Portfolio -->
 <Portfolio />
+
+<!-- Projects -->
+<Projects />
+
+<!-- Testimonial -->
+<Testimonial />
