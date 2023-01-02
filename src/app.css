@@ -3,15 +3,15 @@
 @tailwind base;
 
 @layer base {
-  h1 {
-    font-size: var(--h1-font-size);
-  }
-  h2 {
-    font-size: var(--h2-font-size);
-  }
-  h3 {
-    font-size: var(--h3-font-size);
-  }
+	h1 {
+		font-size: var(--h1-font-size);
+	}
+	h2 {
+		font-size: var(--h2-font-size);
+	}
+	h3 {
+		font-size: var(--h3-font-size);
+	}
 }
 
 @tailwind components;
@@ -38,13 +38,13 @@
 
 	/*========== Font and typography ==========*/
 	--ps-body-font: 'Poppins', sans-serif;
-  --ps-big-font-size: 2rem;
-  --ps-h1-font-size: 1.5rem;
-  --ps-h2-font-size: 1.25rem;
-  --ps-h3-font-size: 1.125rem;
-  --ps-normal-font-size: .938rem;
-  --ps-small-font-size: .813rem;
-  --ps-smaller-font-size: .75rem;
+	--ps-big-font-size: 2rem;
+	--ps-h1-font-size: 1.5rem;
+	--ps-h2-font-size: 1.25rem;
+	--ps-h3-font-size: 1.125rem;
+	--ps-normal-font-size: 0.938rem;
+	--ps-small-font-size: 0.813rem;
+	--ps-smaller-font-size: 0.75rem;
 }
 
 * {
@@ -93,43 +93,58 @@ img {
 }
 
 .ps-section {
-  @apply pt-8 px-0 pb-16;
+	@apply pt-8 px-0 pb-16;
 }
 
 .ps-section__title {
-  @apply text-ps-h1-font-size text-ps-title-color;
+	@apply text-ps-h1-font-size text-ps-title-color;
 }
 
 .ps-section__subtitle {
-  @apply block text-ps-small-font-size mb-12;
+	@apply block text-ps-small-font-size mb-12;
 }
 
-.ps-section__title, 
+.ps-section__title,
 .ps-section__subtitle {
-  @apply text-center;
+	@apply text-center;
 }
 
 .ps-button {
-  @apply inline-block bg-ps-first-color text-white p-4 rounded-lg font-medium;
+	@apply inline-block bg-ps-first-color text-white p-4 rounded-lg font-medium;
 }
 
 .ps-button__icon {
-  @apply text-xl ml-2 duration-300;
+	@apply text-xl ml-2 duration-300;
 }
 
 .ps-button__flex {
-  @apply inline-flex items-center;
+	@apply inline-flex items-center;
 }
 
 .ps-button__small {
-  @apply py-3 px-4;
+	@apply py-3 px-4;
 }
 
 .ps-button__link {
-  @apply p-0 bg-transparent text-ps-first-color;
+	@apply p-0 bg-transparent text-ps-first-color;
 }
 
 .ps-button__link:hover {
-  @apply bg-transparent text-ps-first-color-alt;
+	@apply bg-transparent text-ps-first-color-alt;
 }
+
+/* Override style of swiper slide arrows */
+.swiper-button-prev,
+.swiper-button-next {
+	@apply text-ps-first-color !important;
+}
+
+.swiper-horizontal > .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+	@apply -bottom-1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	@apply bg-ps-first-color;
+}
+
 /* Re-usable css ends */
