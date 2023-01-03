@@ -8,18 +8,22 @@
 			<ul class="ps-footer__links">
 				<li>
 					<a href="#services" class="ps-footer__link">Services</a>
+        </li>
+        <li>
 					<a href="#portfolio" class="ps-footer__link">Portfolio</a>
+        </li>
+        <li>
 					<a href="#contact" class="ps-footer__link">Contact me</a>
-				</li>
+        </li>
 			</ul>
 			<div class="ps-footer__socials">
-				<a href="https://www.facebook.com" class="ps-footer__social">
+				<a href="https://www.facebook.com" rel="noreferrer" target="_blank" class="ps-footer__social">
 					<i class="uil uil-facebook-f"></i>
 				</a>
-				<a href="https://www.instagram.com" class="ps-footer__social">
+				<a href="https://www.instagram.com" rel="noreferrer" target="_blank" class="ps-footer__social">
 					<i class="uil uil-instagram"></i>
         </a>
-				<a href="https://twitter.com" class="ps-footer__social">
+				<a href="https://twitter.com" rel="noreferrer" target="_blank" class="ps-footer__social">
 					<i class="uil uil-twitter-alt"></i>
         </a>
 			</div>

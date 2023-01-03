@@ -47,6 +47,17 @@
 	--ps-smaller-font-size: 0.75rem;
 }
 
+html.dark {
+  --ps-hue-color: 15;
+  /* HSL color mode */
+  --ps-first-color-second: hsl(var(--ps-hue-color), 15%, 9%);
+  --ps-title-color: hsl(var(--ps-hue-color), 8%, 95%);
+  --ps-text-color: hsl(var(--ps-hue-color), 8%, 75%);
+  --ps-input-color: hsl(var(--ps-hue-color), 29%, 16%);
+  --ps-body-color: hsl(var(--ps-hue-color), 10%, 5%);
+  --ps-container-color: hsl(var(--ps-hue-color), 40%, 20%);
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -58,8 +69,10 @@ html {
 }
 
 body {
-	@apply bg-white dark:bg-black text-black dark:text-white;
+	/* @apply bg-white dark:bg-ps-body-color text-black dark:bg-ps-text-color; */
 	font-family: var(--ps-body-font);
+  background-color: var(--ps-body-color);
+  color: var(--ps-text-color);
 }
 
 h1,
@@ -137,18 +150,28 @@ img {
 	@apply bg-transparent text-ps-first-color-alt;
 }
 
-/* Override style of swiper slide arrows */
-/* .swiper-button-prev,
-.swiper-button-next {
-	@apply text-ps-first-color !important;
+.ps-container .ps-nav-active-link {
+  @apply text-ps-first-color;
 }
 
-.swiper-horizontal > .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-	@apply -bottom-1;
+.ps-scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
-	@apply bg-ps-first-color;
-} */
+.ps-scrollup {
+  @apply fixed right-4 -bottom-[20%] bg-ps-first-color opacity-80 py-0 px-1 rounded-md z-[99] duration-[400];
+}
+
+.ps-scrollup:hover {
+  @apply bg-ps-first-color-alt
+}
+
+.ps-scrollup__icon {
+  @apply text-2xl text-white 
+}
+
+.ps-scroll-show {
+  @apply bottom-20;
+}
 
 /* Re-usable css ends */

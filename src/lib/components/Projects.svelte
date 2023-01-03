@@ -2,7 +2,7 @@
   import allu from '$lib/assets/images/allu.png';
 </script>
 
-<section class="ps-project ps-section" id="projects">
+<section class="ps-project ps-section">
   <div class="ps-project__bg">
     <div class="ps-project__container ps-container ps-grid">
       <div class="ps-project__data">

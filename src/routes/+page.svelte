@@ -1,6 +1,7 @@
-<script>
-	import Footer from '$lib/components/Footer.svelte';
-import {
+<script lang="ts">
+	import {
+		ThemeSwitch,
+		NavBar,
 		Home,
 		About,
 		Skills,
@@ -9,36 +10,38 @@ import {
 		Portfolio,
 		Projects,
 		Testimonial,
-		ContactMe
+		ContactMe,
+		Footer
 	} from '$lib/components/index';
+	import '../app.css';
 </script>
 
-<!-- Home -->
-<Home />
+<main>
+	<!-- <ThemeSwitch /> -->
 
-<!-- About -->
-<About />
+	<NavBar />
 
-<!-- Skills -->
-<Skills />
+	<Home />
 
-<!-- Qualifications -->
-<Qualifications />
+	<About />
 
-<!-- Services -->
-<Services />
+	<Skills />
 
-<!-- Portfolio -->
-<Portfolio />
+	<Qualifications />
 
-<!-- Projects -->
-<Projects />
+	<Services />
 
-<!-- Testimonial -->
-<Testimonial />
+	<Portfolio />
 
-<!-- Contact Me -->
-<ContactMe />
+	<Projects />
 
-<!-- Footer -->
+	<Testimonial />
+
+	<ContactMe />
+</main>
+
 <Footer />
+
+<a href="#" id="scroll-up" class="ps-scrollup">
+  <i class="uil uil-arrow-up ps-scrollup__icon"></i>
+</a>

@@ -1,12 +1,17 @@
 <script>
+	import ThemeSwitch from "./ThemeSwitch.svelte";
+
 	let showMenu = true;
-	const handleMenuToggle = () => (showMenu = !showMenu);
+	function handleMenuToggle() {
+		showMenu = !showMenu;
+		return;
+	}
 </script>
 
-<header class="ps-header">
+<header class="ps-header" id="header">
 	<nav class="ps-nav ps-container">
-		<a href="#home" class="ps-nav__logo">Praveen</a>
-		<div class="ps-nav__menu {showMenu ? 'ps-show-menu': ''}" id="nav-menu" >
+		<a href="#" class="ps-nav__logo">Praveen</a>
+		<div class="ps-nav__menu {showMenu ? 'ps-show-menu' : ''}" id="nav-menu">
 			<ul class="ps-nav__list ps-grid">
 				<li class="ps-nav__item">
 					<a href="#home" class="ps-nav__link" on:click={handleMenuToggle}>
@@ -40,9 +45,11 @@
 					</a>
 				</li>
 			</ul>
-			<i class="uil uil-times ps-nav__close" id="ps-nav-close" on:click={handleMenuToggle}/>
+			<i class="uil uil-times ps-nav__close" id="ps-nav-close" on:click={handleMenuToggle} />
 		</div>
 		<div class="ps-nav__btns">
+      <!-- Theme select input -->
+      <ThemeSwitch />
 			<div class="ps-nav__toggle" id="ps-nav-toggle" on:click={handleMenuToggle}>
 				<i class="uil uil-apps" />
 			</div>
@@ -76,8 +83,8 @@
 	}
 
 	.ps-nav__menu {
-		@apply fixed bottom-0 left-0 w-[100%] bg-ps-body-color pl-8 py-6 pr-16 rounded-t-[2rem] rounded-b-none duration-[.3s] bottom-[-100%];
-		box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.15);
+		@apply fixed bottom-0 left-0 w-[100%] bg-ps-body-color pl-8 py-6 pr-16 rounded-t-[2rem] rounded-b-none duration-[.3s] bottom-[-100%] z-10;
+		box-shadow: 0 -1px 4px rgba($color: var(--ps-box-shadow-color), $alpha: 0.15);
 	}
 
 	.ps-nav__list {
@@ -103,7 +110,11 @@
 		@apply text-ps-first-color-alt;
 	}
 
-  .ps-show-menu {
-    @apply bottom-0
+	.ps-show-menu {
+		@apply bottom-0;
+	}
+
+  .ps-nav__btns {
+    @apply flex gap-2;
   }
 </style>

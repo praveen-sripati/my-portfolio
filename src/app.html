@@ -21,4 +21,49 @@
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
+	<script>
+		const sections = document.querySelectorAll('section[id]');
+
+		function scrollActive() {
+			const scrollY = window.pageYOffset;
+
+			sections.forEach((current) => {
+				const sectionHeight = current.offsetHeight;
+				const sectionTop = current.offsetTop - 50;
+
+				sectionID = current.getAttribute('id');
+
+				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+					document
+						.querySelector('.ps-nav__menu a[href*=' + sectionID + ']')
+						.classList.add('ps-nav-active-link');
+				} else {
+					document
+						.querySelector('.ps-nav__menu a[href*=' + sectionID + ']')
+						.classList.remove('ps-nav-active-link');
+				}
+			});
+		}
+		window.addEventListener('scroll', scrollActive);
+	</script>
+	<script>
+		function scrollHeader() {
+			const nav = document.getElementById('header');
+
+			if (window.scrollY >= 80) nav?.classList.add('ps-scroll-header');
+			else nav?.classList.remove('ps-scroll-header');
+		}
+
+		window.addEventListener('scroll', scrollHeader);
+	</script>
+	<script>
+		function scrollUp() {
+			const scrollUp = document.getElementById('scroll-up');
+
+			if (window.scrollY >= 560) scrollUp?.classList.add('ps-scroll-show');
+			else scrollUp?.classList.remove('ps-scroll-show');
+		}
+
+		window.addEventListener('scroll', scrollUp);
+	</script>
 </html>

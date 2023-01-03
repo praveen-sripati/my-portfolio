@@ -14,7 +14,7 @@
 	import { Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
 </script>
 
-<section class="ps-testimonial ps-section" id="testimonial">
+<section class="ps-testimonial ps-section">
 	<h2 class="ps-section__title">Testimonial</h2>
 	<span class="ps-section__subtitle">My client saying</span>
 	<div class="ps-testimonial__container ps-container">
