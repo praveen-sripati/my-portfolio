@@ -20,11 +20,15 @@
 
 <style lang="scss">
   .ps-project {
-    @apply text-center;
+    @apply text-center tablet:text-left;
+  }
+
+  .ps-project__container {
+    @apply mobile-lg:grid-cols-2 tablet:bg-ps-first-color-second tablet:rounded-2xl tablet:pt-12 tablet:px-10 tablet:pb-0 tablet:grid-cols-[1fr_max-content] tablet:gap-x-12;
   }
 
   .ps-project__bg {
-    @apply bg-ps-first-color pt-12;
+    @apply bg-ps-first-color pt-12 tablet:bg-transparent;
   }
 
   .ps-project__title {
@@ -40,6 +44,10 @@
   }
 
   .ps-project__img {
-    @apply w-[232px] justify-self-center;
+    @apply w-[232px] justify-self-center mobile-sm:w-[200px];
+  }
+
+  .ps-project__data {
+    @apply tablet:pt-3
   }
 </style>

@@ -159,11 +159,11 @@
 
 <style lang="scss">
 	.ps-qualification__tabs {
-		@apply flex justify-evenly mb-8;
+		@apply flex justify-evenly mb-8 tablet:justify-center;
 	}
 
 	.ps-qualification__button {
-		@apply text-ps-h3-font-size font-medium cursor-pointer;
+		@apply text-ps-h3-font-size font-medium cursor-pointer tablet:my-0 tablet:mx-4;
 	}
 
 	.ps-qualification__button:hover {
@@ -179,7 +179,7 @@
 	}
 
 	.ps-qualification__data {
-		@apply grid grid-cols-[1fr_max-content_1fr] gap-x-6;
+		@apply grid grid-cols-[1fr_max-content_1fr] gap-x-6 mobile-sm:gap-2;
 	}
 
 	.ps-qualification__title {
@@ -201,4 +201,8 @@
 	.ps-qualification__line {
 		@apply block w-[1px] h-full bg-ps-first-color translate-x-[6px] translate-y-[-7px];
 	}
+
+  .ps-qualification__sections {
+    @apply mobile-lg:grid mobile-lg:grid-cols-[.6fr] mobile-lg:justify-center tablet:grid-cols-[.5fr];
+  }
 </style>

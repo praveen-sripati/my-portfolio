@@ -98,11 +98,11 @@
   }
 
 	.ps-portfolio__content {
-		@apply py-0 px-6;
+		@apply py-0 px-6 mobile-lg:grid-cols-2 mobile-lg:items-center desktop:gap-x-12;
 	}
 
 	.ps-portfolio__img {
-		@apply w-[265px] rounded-lg justify-self-center;
+		@apply w-[265px] rounded-lg justify-self-center tablet:w-[230px];
 	}
 
 	.ps-portfolio__title {

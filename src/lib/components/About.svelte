@@ -32,16 +32,21 @@
 
 <style lang="scss">
   // About CSS
+
+  .ps-about__container {
+    @apply mobile-lg:grid-cols-2 tablet:gap-x-20;
+  }
+
   .ps-about__img {
-    @apply w-[200px] rounded-lg justify-self-center self-center;
+    @apply w-[200px] rounded-lg justify-self-center self-center tablet:w-[350px];
   }
 
   .ps-about__description {
-    @apply text-center mb-10;
+    @apply text-center mb-10 tablet:text-left;
   }
 
   .ps-about__info {
-    @apply flex justify-evenly mb-10;
+    @apply flex justify-evenly mb-10 tablet:justify-between;
   }
 
   .ps-about__info-title {
@@ -58,6 +63,6 @@
   }
 
   .ps-about__buttons {
-    @apply flex justify-center;
+    @apply flex justify-center tablet:justify-start;
   }
 </style>

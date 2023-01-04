@@ -27,6 +27,24 @@ module.exports = {
         "ps-normal-font-size": "var(--ps-normal-font-size)",
         "ps-small-font-size": "var(--ps-small-font-size)",
         "ps-smaller-font-size": "var(--ps-smaller-font-size)",
+      },
+      screens: {
+        'desktop': {'min': '1280px'},
+        // => @media (min-width: 1280px) { ... }
+  
+        'laptop': {'min': '1024px'},
+        // => @media (min-width: 1024px) { ... }
+  
+        'tablet': {'min': '768px'},
+        // => @media (min-width: 768px) { ... }
+
+        'mobile-lg': {'min': '568px'},
+        // => @media (min-width: 568px) { ... }
+  
+        // `mobile-md` is default
+
+        'mobile-sm': {'max': '350px'},
+        // => @media (max-width: 350px) { ... }
       }
     },
   },

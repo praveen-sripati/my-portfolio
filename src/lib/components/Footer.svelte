@@ -37,10 +37,10 @@
     @apply pt-8;
   }
   .ps-footer__container {
-    @apply gap-y-14;
+    @apply gap-y-14 mobile-lg:grid-cols-2 tablet:py-0 tablet:px-4 tablet:grid-cols-3 desktop:p-0;
   }
   .ps-footer__bg {
-    @apply bg-ps-first-color-second pt-8 px-0 pr-12;
+    @apply bg-ps-first-color-second pt-8 px-0 pr-12 tablet:pt-12 tablet:py-0 tablet:pb-14;
   }
   .ps-footer__title {
     @apply text-ps-h1-font-size mb-1;
@@ -51,7 +51,7 @@
   }
 
   .ps-footer__links {
-    @apply flex flex-col gap-y-6;
+    @apply flex flex-col gap-y-6 tablet:flex-row tablet:gap-x-8;
   }
 
   .ps-footer__links:hover {
@@ -67,7 +67,7 @@
   }
 
   .ps-footer__copy {
-    @apply text-ps-smaller-font-size text-center text-ps-text-color-light mt-12;
+    @apply text-ps-smaller-font-size text-center text-ps-text-color-light mt-12 tablet:mt-[4.5rem];
   }
 
   .ps-footer__title,

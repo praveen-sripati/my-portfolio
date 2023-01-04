@@ -208,7 +208,7 @@
 	}
 
 	.ps-skills__title {
-		@apply text-ps-h3-font-size;
+		@apply text-ps-h3-font-size mobile-sm:text-ps-normal-font-size;
 	}
 
 	.ps-skills__subtitle {

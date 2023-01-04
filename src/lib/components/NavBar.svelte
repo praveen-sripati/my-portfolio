@@ -59,7 +59,7 @@
 
 <style lang="scss">
 	.ps-header {
-		@apply fixed bottom-0 left-0 w-full z-[100] bg-ps-body-color;
+		@apply fixed bottom-0 left-0 w-full z-[100] bg-ps-body-color tablet:top-0 tablet:bottom-[initial] tablet:py-0 tablet:px-4 desktop:p-0;
 	}
 
 	.ps-nav {
@@ -76,19 +76,19 @@
 	}
 
 	.ps-nav__toggle {
-		@apply text-xl cursor-pointer;
+		@apply text-xl cursor-pointer tablet:hidden;
 	}
 	.ps-nav__toggle:hover {
 		@apply text-ps-first-color;
 	}
 
 	.ps-nav__menu {
-		@apply fixed bottom-0 left-0 w-[100%] bg-ps-body-color pl-8 py-6 pr-16 rounded-t-[2rem] rounded-b-none duration-[.3s] bottom-[-100%] z-10;
-		box-shadow: 0 -1px 4px rgba($color: var(--ps-box-shadow-color), $alpha: 0.15);
+		@apply fixed bottom-0 left-0 w-[100%] bg-ps-body-color pl-8 py-6 pr-16 rounded-t-[2rem] rounded-b-none duration-[.3s] bottom-[-100%] z-10 mobile-sm:px-1 mobile-sm:pt-8 mobile-sm:pb-16 tablet:ml-auto tablet:static tablet:bg-transparent;
+		box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.15);
 	}
 
 	.ps-nav__list {
-		@apply grid-cols-3 gap-8;
+		@apply grid-cols-3 gap-8 mobile-sm:gap-x-0 tablet:flex tablet:gap-x-8;
 	}
 	.ps-nav__link {
 		@apply flex flex-col items-center font-medium text-ps-title-color text-ps-small-font-size;
@@ -99,11 +99,11 @@
 	}
 
 	.ps-nav__icon {
-		@apply text-xl;
+		@apply text-xl tablet:hidden;
 	}
 
 	.ps-nav__close {
-		@apply absolute right-5 bottom-2 text-2xl cursor-pointer text-ps-first-color;
+		@apply absolute right-5 bottom-2 text-2xl cursor-pointer text-ps-first-color tablet:hidden;
 	}
 
 	.ps-nav__close:hover {
@@ -116,5 +116,16 @@
 
   .ps-nav__btns {
     @apply flex gap-2;
+  }
+
+  @media screen and (min-width: 768px) {
+    .ps-nav {
+      height: calc(4.5rem);
+      column-gap: 1rem;
+    }
+
+    .ps-nav__menu {
+      box-shadow: none;
+    }
   }
 </style>

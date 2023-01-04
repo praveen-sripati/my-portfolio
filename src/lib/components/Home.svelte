@@ -80,15 +80,15 @@
 <style lang="scss">
   // Home CSS
   .ps-home__container {
-    @apply gap-4;
+    @apply gap-4 tablet:gap-y-20;
   }
 
   .ps-home__content {
-    @apply grid-cols-[.5fr_3fr] pt-14 items-center;
+    @apply grid-cols-[.5fr_3fr] pt-14 items-center mobile-sm:grid-cols-[.25fr_3fr] mobile-lg:grid-cols-[max-content_1fr_1fr] tablet:pt-[5.5rem] tablet:gap-x-8;
   }
 
   .ps-home__social {
-    @apply grid grid-cols-[max-content] gap-y-4;
+    @apply grid grid-cols-[max-content] gap-y-4 desktop:-translate-x-24;
   }
 
   .ps-home__social-icon {
@@ -100,7 +100,7 @@
   }
 
   .ps-home__blob {
-    @apply w-[200px] fill-ps-first-color;
+    @apply w-[200px] fill-ps-first-color mobile-sm:w-[180px] tablet:w-[270px] desktop:w-[320px];
   }
 
   .ps-home__blob-img {
@@ -108,7 +108,7 @@
   }
 
   .ps-home__data {
-    @apply col-[1_/_3];
+    @apply col-[1_/_3] mobile-lg:col-[initial];
   }
 
   .ps-home__title {
@@ -124,11 +124,11 @@
   }
 
   .ps-home__scroll {
-    @apply hidden;
+    @apply hidden tablet:block;
   }
 
   .ps-home__scroll-button {
-    @apply text-ps-first-color duration-300;
+    @apply text-ps-first-color duration-300 tablet:ml-12;
   }
 
   .ps-home__scroll-button:hover {
@@ -145,5 +145,9 @@
 
   .ps-home__scroll-arrow {
     @apply text-xl;
+  }
+
+  .ps-home__img {
+    @apply mobile-lg:order-1 justify-self-center;
   }
 </style>

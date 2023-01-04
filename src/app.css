@@ -56,6 +56,8 @@ html.dark {
   --ps-input-color: hsl(var(--ps-hue-color), 29%, 16%);
   --ps-body-color: hsl(var(--ps-hue-color), 10%, 5%);
   --ps-container-color: hsl(var(--ps-hue-color), 40%, 20%);
+  --ps-scroll-bar-color: hsl(var(--ps-hue-color), 12%, 48%);
+	--ps-scroll-thumb-color: hsl(var(--ps-hue-color), 12%, 36%);
 }
 
 * {
@@ -73,6 +75,19 @@ body {
 	font-family: var(--ps-body-font);
   background-color: var(--ps-body-color);
   color: var(--ps-text-color);
+  @apply tablet:m-0;
+}
+
+::-webkit-scrollbar {
+  @apply w-3 bg-ps-scroll-bar-color rounded-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-ps-scroll-thumb-color rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-ps-text-color-light;
 }
 
 h1,
@@ -98,7 +113,7 @@ img {
 
 /* Re-usable css starts */
 .ps-container {
-	@apply max-w-3xl ml-6 mr-6;
+	@apply max-w-3xl ml-6 mr-6 mobile-sm:ml-4 mobile-sm:mr-4 tablet:ml-auto tablet:mr-auto tablet:pl-4 tablet:pr-4;
 }
 
 .ps-grid {
@@ -106,7 +121,7 @@ img {
 }
 
 .ps-section {
-	@apply pt-8 px-0 pb-16;
+	@apply pt-8 px-0 pb-16 tablet:pt-24 tablet:px-0 tablet:pb-8;
 }
 
 .ps-section__title {
@@ -114,7 +129,7 @@ img {
 }
 
 .ps-section__subtitle {
-	@apply block text-ps-small-font-size mb-12;
+	@apply block text-ps-small-font-size mb-12 tablet:mb-16;
 }
 
 .ps-section__title,

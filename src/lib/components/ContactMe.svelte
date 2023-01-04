@@ -57,7 +57,7 @@
 
 <style lang="scss">
 	.ps-contact__container {
-		@apply gap-y-12;
+		@apply gap-y-12 mobile-lg:grid-cols-2;
 	}
 
 	.ps-contact__information {

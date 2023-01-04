@@ -163,18 +163,18 @@
 
 <style lang="scss">
 	.ps-services__container {
-		@apply gap-6 grid-cols-2;
+		@apply gap-6 grid-cols-2 mobile-sm:grid-cols-[max-content] mobile-sm:justify-center tablet:grid-cols-3 tablet:justify-center desktop:gap-10;
 	}
 
 	.ps-services__content {
-		@apply relative bg-ps-container-color pt-14 pr-2 pb-5 pl-6 rounded-md shadow-lg duration-300;
+		@apply relative bg-ps-container-color pt-14 pr-2 pb-5 pl-6 rounded-md shadow-lg duration-300 mobile-sm:pr-14 tablet:pt-24 tablet:pr-0 tablet:pb-8 tablet:pl-10;
 		&:hover {
 			@apply shadow-xl;
 		}
 	}
 
 	.ps-services__icon {
-		@apply block text-2xl text-ps-first-color;
+		@apply block text-2xl text-ps-first-color tablet:text-4xl;
 	}
 
 	.ps-services__title {
@@ -189,7 +189,7 @@
 	}
 
 	.ps-services__modal {
-		@apply fixed top-0 right-0 bottom-0 left-0 bg-black/50 flex items-center justify-center py-0 px-4 z-[1000] duration-300;
+		@apply fixed top-0 right-0 bottom-0 left-0 bg-black/50 flex items-center justify-center py-0 px-4 z-[1000] duration-300 mobile-sm:px-2 mobile-sm:py-0;
 	}
 
 	.ps-services__modal-content {

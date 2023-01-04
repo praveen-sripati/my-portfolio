@@ -126,15 +126,15 @@
 
 	.ps-testimonial__data,
 	.ps-testimonial__header {
-		@apply flex;
+		@apply flex mobile-sm:flex-col mobile-sm:items-center;
 	}
 
 	.ps-testimonial__data {
-		@apply justify-between mb-4;
+		@apply justify-between mb-4 mobile-sm:text-center;
 	}
 
 	.ps-testimonial__img {
-		@apply w-16 h-16 rounded-[50%] mr-3 object-cover;
+		@apply w-16 h-16 rounded-[50%] mr-3 object-cover mobile-sm:mr-0 mobile-sm:mb-1;
 	}
 
 	.ps-testimonial__name {
@@ -146,7 +146,7 @@
 	}
 
 	.ps-testimonial__description {
-		@apply mb-10;
+		@apply mb-10 mobile-sm:text-center;
 	}
 
 	.ps-testimonial__icon-star {
