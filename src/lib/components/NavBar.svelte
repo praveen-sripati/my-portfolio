@@ -1,16 +1,20 @@
-<script>
-	import ThemeSwitch from "./ThemeSwitch.svelte";
+<script lang="ts">
+	import { handleSmoothScrolling } from '$lib/utils/helpers';
+	import ThemeSwitch from './ThemeSwitch.svelte';
 
 	let showMenu = true;
-	function handleMenuToggle() {
+	function handleMenuToggle(event: any) {
 		showMenu = !showMenu;
+		handleSmoothScrolling(event);
 		return;
 	}
+
+	
 </script>
 
 <header class="ps-header" id="header">
 	<nav class="ps-nav ps-container">
-		<a href="#" class="ps-nav__logo">Praveen</a>
+		<a href="#home" class="ps-nav__logo" on:click={handleSmoothScrolling}>Praveen</a>
 		<div class="ps-nav__menu {showMenu ? 'ps-show-menu' : ''}" id="nav-menu">
 			<ul class="ps-nav__list ps-grid">
 				<li class="ps-nav__item">
@@ -48,8 +52,8 @@
 			<i class="uil uil-times ps-nav__close" id="ps-nav-close" on:click={handleMenuToggle} />
 		</div>
 		<div class="ps-nav__btns">
-      <!-- Theme select input -->
-      <ThemeSwitch />
+			<!-- Theme select input -->
+			<ThemeSwitch />
 			<div class="ps-nav__toggle" id="ps-nav-toggle" on:click={handleMenuToggle}>
 				<i class="uil uil-apps" />
 			</div>
@@ -114,18 +118,18 @@
 		@apply bottom-0;
 	}
 
-  .ps-nav__btns {
-    @apply flex gap-2;
-  }
+	.ps-nav__btns {
+		@apply flex gap-2;
+	}
 
-  @media screen and (min-width: 768px) {
-    .ps-nav {
-      height: calc(4.5rem);
-      column-gap: 1rem;
-    }
+	@media screen and (min-width: 768px) {
+		.ps-nav {
+			height: calc(4.5rem);
+			column-gap: 1rem;
+		}
 
-    .ps-nav__menu {
-      box-shadow: none;
-    }
-  }
+		.ps-nav__menu {
+			box-shadow: none;
+		}
+	}
 </style>

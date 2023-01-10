@@ -67,7 +67,7 @@ html.dark {
 }
 
 html {
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 
 body {

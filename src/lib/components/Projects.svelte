@@ -1,5 +1,6 @@
 <script lang="ts">
   import allu from '$lib/assets/images/allu.png';
+	import { handleSmoothScrolling } from '$lib/utils/helpers';
 </script>
 
 <section class="ps-project ps-section">
@@ -8,7 +9,7 @@
       <div class="ps-project__data">
         <h2 class="ps-project__title">You have a new project</h2>
         <p class="ps-project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum commodi maiores obcaecati eius unde beatae temporibus, praesentium aliquid rerum doloremque minima. Tenetur quisquam ab veniam, necessitatibus facilis quia. Quo, ad.</p>
-        <a href="" class="ps-button ps-button__flex ps-button__white">
+        <a href="#contact" class="ps-button ps-button__flex ps-button__white" on:click={handleSmoothScrolling}>
           Contact Me
           <i class="uil uil-message ps-project__icon ps-button__icon"></i>
         </a>

@@ -1,7 +1,5 @@
 <script lang="ts">
 	import {
-		ThemeSwitch,
-		NavBar,
 		Home,
 		About,
 		Skills,
@@ -11,37 +9,24 @@
 		Projects,
 		Testimonial,
 		ContactMe,
-		Footer
 	} from '$lib/components/index';
 	import '../app.css';
 </script>
 
-<main>
-	<!-- <ThemeSwitch /> -->
+<Home />
 
-	<NavBar />
+<About />
 
-	<Home />
+<Skills />
 
-	<About />
+<Qualifications />
 
-	<Skills />
+<Services />
 
-	<Qualifications />
+<Portfolio />
 
-	<Services />
+<Projects />
 
-	<Portfolio />
+<Testimonial />
 
-	<Projects />
-
-	<Testimonial />
-
-	<ContactMe />
-</main>
-
-<Footer />
-
-<a href="#" id="scroll-up" class="ps-scrollup">
-  <i class="uil uil-arrow-up ps-scrollup__icon"></i>
-</a>
+<ContactMe />
