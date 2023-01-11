@@ -15,7 +15,9 @@
 						href="#services"
 						class="ps-footer__link"
 						on:click={handleSmoothScrolling}
-						on:keypress={handleKeyPress}>Services</a
+						on:keypress={handleKeyPress}
+            aria-label="Jump to Services"
+            >Services</a
 					>
 				</li>
 				<li>
@@ -23,7 +25,8 @@
 						href="#portfolio"
 						class="ps-footer__link"
 						on:click={handleSmoothScrolling}
-						on:keypress={handleKeyPress}>Portfolio</a
+						on:keypress={handleKeyPress}
+            aria-label="Jump to Portfolio">Portfolio</a
 					>
 				</li>
 				<li>
@@ -31,7 +34,8 @@
 						href="#contact"
 						class="ps-footer__link"
 						on:click={handleSmoothScrolling}
-						on:keypress={handleKeyPress}>Contact me</a
+						on:keypress={handleKeyPress}
+            aria-label="Jump to Contact me">Contact me</a
 					>
 				</li>
 			</ul>

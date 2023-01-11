@@ -18,6 +18,7 @@
 					class="ps-button ps-button__flex ps-button__white"
 					on:click={handleSmoothScrolling}
 					on:keypress={handleKeyPress}
+          aria-label="Jump to contact me section"
 				>
 					Contact Me
 					<i class="uil uil-message ps-project__icon ps-button__icon" />

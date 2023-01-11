@@ -16,7 +16,9 @@
 			href="#home"
 			class="ps-nav__logo"
 			on:click={handleSmoothScrolling}
-			on:keypress={handleKeyPress}>Praveen</a
+			on:keypress={handleKeyPress}
+      aria-label="Jump to Home section"
+    >Praveen</a
 		>
 		<div class="ps-nav__menu {showMenu ? 'ps-show-menu' : ''}" id="nav-menu">
 			<ul class="ps-nav__list ps-grid">
@@ -26,6 +28,7 @@
 						class="ps-nav__link"
 						on:click={handleMenuToggle}
 						on:keypress={handleKeyPress}
+            aria-label="Jump to Home section"
 					>
 						<i class="uil uil-estate ps-nav__icon" /> Home
 					</a>
@@ -36,6 +39,7 @@
 						class="ps-nav__link"
 						on:click={handleMenuToggle}
 						on:keypress={handleKeyPress}
+            aria-label="Jump to About section"
 					>
 						<i class="uil uil-user ps-nav__icon" /> About
 					</a>
@@ -46,6 +50,7 @@
 						class="ps-nav__link"
 						on:click={handleMenuToggle}
 						on:keypress={handleKeyPress}
+            aria-label="Jump to Skills section"
 					>
 						<i class="uil uil-file-alt ps-nav__icon" /> Skills
 					</a>
@@ -56,6 +61,7 @@
 						class="ps-nav__link"
 						on:click={handleMenuToggle}
 						on:keypress={handleKeyPress}
+            aria-label="Jump to Services section"
 					>
 						<i class="uil uil-briefcase-alt ps-nav__icon" /> Services
 					</a>
@@ -66,6 +72,7 @@
 						class="ps-nav__link"
 						on:click={handleMenuToggle}
 						on:keypress={handleKeyPress}
+            aria-label="Jump to Portfolio section"
 					>
 						<i class="uil uil-scenery ps-nav__icon" /> Portfolio
 					</a>
@@ -77,6 +84,7 @@
 						class="ps-nav__link"
 						on:click={handleMenuToggle}
 						on:keypress={handleKeyPress}
+            aria-label="Jump to Contact me section"
 					>
 						<i class="uil uil-message ps-nav__icon" /> Contact me
 					</a>
@@ -87,6 +95,7 @@
 				id="ps-nav-close"
 				on:click={handleMenuToggle}
 				on:keypress={handleKeyPress}
+        aria-label="Close nav bar"
 			/>
 		</div>
 		<div class="ps-nav__btns">
@@ -97,6 +106,7 @@
 				id="ps-nav-toggle"
 				on:click={handleMenuToggle}
 				on:keypress={handleKeyPress}
+        aria-label="Toggle nav bar"
 			>
 				<i class="uil uil-apps" />
 			</div>

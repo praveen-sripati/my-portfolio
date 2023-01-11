@@ -27,6 +27,7 @@
 	on:click={handleScrollUp}
 	on:keypress={handleScrollUp}
 	rel="noreferrer"
+  aria-label="Scroll upto top of the page"
 >
 	<i class="uil uil-arrow-up ps-scrollup__icon" />
 </a>

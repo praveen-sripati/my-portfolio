@@ -46,7 +46,7 @@
 			</div>
 
 			<div>
-				<a href="/" class="ps-button ps-button__flex">
+				<a href="/" class="ps-button ps-button__flex" aria-label="Send message/contact details to praveen">
 					Send Message
 					<i class="uil uil-message ps-button__icon" />
 				</a>

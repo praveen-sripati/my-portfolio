@@ -72,6 +72,7 @@
 					class="ps-button ps-button__flex"
 					on:click={handleSmoothScrolling}
 					on:keypress={handleKeyPress}
+          aria-label="Jump to Contact Me"
 				>
 					Contact Me <i class="uil uil-message ps-button__icon" />
 				</a>
@@ -83,6 +84,7 @@
 				class="ps-home__scroll-button ps-button__flex"
 				on:click={handleSmoothScrolling}
 				on:keypress={handleKeyPress}
+        aria-label="Scroll down to About section"
 			>
 				<i class="uil uil-mouse-alt ps-home__scroll-mouse" />
 				<span class="ps-home__scroll-name">Scroll down</span>

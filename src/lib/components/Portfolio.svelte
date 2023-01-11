@@ -40,6 +40,7 @@
 						<a
 							href="https://www.google.com/"
 							class="ps-button ps-button__flex ps-button__small ps-portfolio__button"
+              aria-label="Go to google link"
 						>
 							Demo
 							<i class="uil uil-arrow-right ps-button__icon" />
@@ -59,6 +60,7 @@
 						<a
 							href="https://www.google.com/"
 							class="ps-button ps-button__flex ps-button__small ps-portfolio__button"
+              aria-label="Go to google link"
 						>
 							Demo
 							<i class="uil uil-arrow-right ps-button__icon" />
@@ -78,6 +80,7 @@
 						<a
 							href="https://www.google.com/"
 							class="ps-button ps-button__flex ps-button__small ps-portfolio__button"
+              aria-label="Go to google link"
 						>
 							Demo
 							<i class="uil uil-arrow-right ps-button__icon" />
