@@ -86,9 +86,11 @@
 									<h1 class="ps-skills__title">Backend developer</h1>
 									<span class="ps-skills__subtitle">Fresher</span>
 								</div>
-								<i class="uil uil-angle-down ps-skills__arrow {accordionState.current === 1
-                  ? 'ps-skills__arrow-rotate-up'
-                  : ''}" />
+								<i
+									class="uil uil-angle-down ps-skills__arrow {accordionState.current === 1
+										? 'ps-skills__arrow-rotate-up'
+										: ''}"
+								/>
 							</div>
 						</svelte:fragment>
 						<svelte:fragment slot="details">
@@ -146,9 +148,11 @@
 									<h1 class="ps-skills__title">Design Tools</h1>
 									<span class="ps-skills__subtitle">More than 2 years</span>
 								</div>
-								<i class="uil uil-angle-down ps-skills__arrow {accordionState.current === 2
-                  ? 'ps-skills__arrow-rotate-up'
-                  : ''}" />
+								<i
+									class="uil uil-angle-down ps-skills__arrow {accordionState.current === 2
+										? 'ps-skills__arrow-rotate-up'
+										: ''}"
+								/>
 							</div>
 						</svelte:fragment>
 						<svelte:fragment slot="details">

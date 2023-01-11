@@ -7,12 +7,12 @@
 	function handleTabChange(tabIndex: number) {
 		selectedTab = tabIndex;
 	}
-  function handleKeyPressTabChange(event: any, tabIndex: number) {
-    event.preventDefault();
-    if(event.keyCode == 32){
-      handleTabChange(tabIndex);
-    }
-  }
+	function handleKeyPressTabChange(event: any, tabIndex: number) {
+		event.preventDefault();
+		if (event.keyCode == 32) {
+			handleTabChange(tabIndex);
+		}
+	}
 </script>
 
 <section class="ps-qualification ps-section">
@@ -25,9 +25,9 @@
 					? 'ps-qualification__button_active'
 					: ''}"
 				role="button"
-        tabindex="0"
+				tabindex="0"
 				on:click={() => handleTabChange(0)}
-        on:keypress={(e) => handleKeyPressTabChange(e, 0)}
+				on:keypress={(e) => handleKeyPressTabChange(e, 0)}
 			>
 				<i class="uil uil-graduation-cap ps-qualification__icon" />
 				Education
@@ -37,9 +37,9 @@
 					? 'ps-qualification__button_active'
 					: ''}"
 				role="button"
-        tabindex="0"
+				tabindex="0"
 				on:click={() => handleTabChange(1)}
-        on:keypress={(e) => handleKeyPressTabChange(e, 1)}
+				on:keypress={(e) => handleKeyPressTabChange(e, 1)}
 			>
 				<i class="uil uil-briefcase-alt ps-qualification__icon" />
 				Work
@@ -212,7 +212,7 @@
 		@apply block w-[1px] h-full bg-ps-first-color translate-x-[6px] translate-y-[-7px];
 	}
 
-  .ps-qualification__sections {
-    @apply mobile-lg:grid mobile-lg:grid-cols-[.6fr] mobile-lg:justify-center tablet:grid-cols-[.5fr];
-  }
+	.ps-qualification__sections {
+		@apply mobile-lg:grid mobile-lg:grid-cols-[.6fr] mobile-lg:justify-center tablet:grid-cols-[.5fr];
+	}
 </style>

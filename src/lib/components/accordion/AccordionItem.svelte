@@ -5,7 +5,7 @@
 
 	export let key = {};
 
-	const { current }:any = getAccordionContext();
+	const { current }: any = getAccordionContext();
 
 	function handleClick() {
 		$current = open ? null : key;

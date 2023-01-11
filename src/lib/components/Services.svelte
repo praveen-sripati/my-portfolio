@@ -35,7 +35,7 @@
 	function handleWindowKeypress(event) {
 		event.preventDefault();
 		if (event.keyCode == 27) {
-      console.log('something')
+			console.log('something');
 			showUIUXModal = false;
 			showBrandingModal = false;
 			showFrontendModal = false;

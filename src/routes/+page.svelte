@@ -8,7 +8,7 @@
 		Portfolio,
 		Projects,
 		Testimonial,
-		ContactMe,
+		ContactMe
 	} from '$lib/components/index';
 	import '../app.css';
 </script>
