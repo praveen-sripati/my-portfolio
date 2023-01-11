@@ -1,12 +1,18 @@
 <script lang="ts">
-	import allu from '$lib/assets/images/allu.png';
+	import alluAvif from '$lib/assets/images/allu.avif';
+	import alluWebp from '$lib/assets/images/allu.webp';
+	import alluPng from '$lib/assets/images/allu.png';
 </script>
 
 <section class="ps-about ps-section" id="about">
 	<h2 class="ps-section__title">About Me</h2>
 	<span class="ps-section__subtitle">My introduction</span>
 	<div class="ps-about__container ps-container ps-grid">
-		<img src={allu} alt="Right side face look of Allu Arjun" class="ps-about__img" />
+    <picture class="ps-about__img">
+      <source srcset={alluAvif} type="image/avif" />
+      <source srcset={alluWebp} type="image/webp" />
+      <img src={alluPng} alt="Right side face look of Allu Arjun" />
+    </picture>
 		<div class="ps-about__data">
 			<p class="ps-about__description">
 				Web developer, with extensive knowledge and years of experience, working in web technologies
@@ -27,9 +33,9 @@
 				</div>
 			</div>
 			<div class="ps-about__buttons">
-				<a href={allu} class="ps-button ps-button__flex" download>
+				<!-- <a href={alluPng} class="ps-button ps-button__flex" download>
 					Download CV<i class="uil uil-download-alt ps-button__icon" />
-				</a>
+				</a> -->
 			</div>
 		</div>
 	</div>

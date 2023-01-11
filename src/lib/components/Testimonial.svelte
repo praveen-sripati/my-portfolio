@@ -1,5 +1,7 @@
 <script>
-	import image from '$lib/assets/images/allu.png';
+  import alluAvif from '$lib/assets/images/allu.avif';
+	import alluWebp from '$lib/assets/images/allu.webp';
+	import alluPng from '$lib/assets/images/allu.png';
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
 
 	// Import Swiper styles
@@ -38,7 +40,11 @@
 				<div class="ps-testimonial__content">
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
-							<img src={image} alt="Allu Arjun" class="ps-testimonial__img" />
+              <picture class="ps-testimonial__avatar">
+                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" />
+                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" />
+                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" />
+              </picture>
 							<div>
 								<h3 class="ps-testimonial__name">Kirankumar Sripati</h3>
 								<span class="ps-testimonial__client">Client</span>
@@ -65,7 +71,11 @@
 				<div class="ps-testimonial__content">
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
-							<img src={image} alt="" class="ps-testimonial__img" />
+							<picture class="ps-testimonial__avatar">
+                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" />
+                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" />
+                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" />
+              </picture>
 							<div>
 								<h3 class="ps-testimonial__name">Anand Sripati</h3>
 								<span class="ps-testimonial__client">Client</span>
@@ -92,7 +102,11 @@
 				<div class="ps-testimonial__content">
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
-							<img src={image} alt="" class="ps-testimonial__img" />
+							<picture class="ps-testimonial__avatar">
+                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" />
+                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" />
+                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" />
+              </picture>
 							<div>
 								<h3 class="ps-testimonial__name">Sidboy</h3>
 								<span class="ps-testimonial__client">Client</span>
@@ -133,8 +147,12 @@
 		@apply justify-between mb-4 mobile-sm:text-center;
 	}
 
+  .ps-testimonial__avatar {
+    @apply mr-3 mobile-sm:mr-0 mobile-sm:mb-1;
+  }
+
 	.ps-testimonial__img {
-		@apply w-16 h-16 rounded-[50%] mr-3 object-cover mobile-sm:mr-0 mobile-sm:mb-1;
+		@apply w-16 h-16 rounded-[50%] object-cover;
 	}
 
 	.ps-testimonial__name {

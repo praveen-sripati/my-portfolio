@@ -1,5 +1,7 @@
 <script lang="ts">
-	import allu from '$lib/assets/images/allu.png';
+	import alluAvif from '$lib/assets/images/allu.avif';
+	import alluWebp from '$lib/assets/images/allu.webp';
+	import alluPng from '$lib/assets/images/allu.png';
 	import { handleKeyPress, handleSmoothScrolling } from '$lib/utils/helpers';
 </script>
 
@@ -18,13 +20,17 @@
 					class="ps-button ps-button__flex ps-button__white"
 					on:click={handleSmoothScrolling}
 					on:keypress={handleKeyPress}
-          aria-label="Jump to contact me section"
+					aria-label="Jump to contact me section"
 				>
 					Contact Me
 					<i class="uil uil-message ps-project__icon ps-button__icon" />
 				</a>
 			</div>
-			<img src={allu} alt="" class="ps-project__img" />
+			<picture class="ps-project__img">
+				<source srcset={alluAvif} type="image/avif" />
+				<source srcset={alluWebp} type="image/webp" />
+				<img src={alluPng} alt="projects" />
+			</picture>
 		</div>
 	</div>
 </section>
@@ -35,7 +41,7 @@
 	}
 
 	.ps-project__container {
-		@apply mobile-lg:grid-cols-2 tablet:bg-ps-first-color-second tablet:rounded-2xl tablet:pt-12 tablet:px-10 tablet:pb-0 tablet:grid-cols-[1fr_max-content] tablet:gap-x-12;
+		@apply mobile-lg:grid-cols-2 tablet:bg-ps-first-color-second tablet:rounded-2xl tablet:pt-12 tablet:px-10 tablet:pb-12 tablet:grid-cols-[1fr_max-content] tablet:gap-x-12;
 	}
 
 	.ps-project__bg {

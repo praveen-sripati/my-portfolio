@@ -1,5 +1,7 @@
 <script lang="ts">
-	import portfolio from '$lib/assets/images/allu.png';
+	import portfolioPng from '$lib/assets/images/allu.png';
+  import portfolioAvif from '$lib/assets/images/allu.avif';
+	import portfolioWebp from '$lib/assets/images/allu.webp';
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
 	// Import Swiper styles
 	import 'swiper/css';
@@ -31,7 +33,11 @@
 			<SwiperSlide>
 				<!-- Portfolio 1 -->
 				<div class="ps-portfolio__content ps-grid mb-7">
-					<img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
+          <picture class="ps-portfolio__img">
+            <source srcset={portfolioAvif} type="image/avif" />
+            <source srcset={portfolioWebp} type="image/webp" />
+            <img src={portfolioPng} alt="portfolio" />
+          </picture>
 					<div class="ps-portfolio__data">
 						<h3 class="ps-portfolio__title">Modern Website</h3>
 						<p class="ps-portfolio__description">
@@ -51,7 +57,11 @@
 			<SwiperSlide>
 				<!-- Portfolio 2 -->
 				<div class="ps-portfolio__content ps-grid mb-7">
-					<img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
+					<picture class="ps-portfolio__img">
+            <source srcset={portfolioAvif} type="image/avif" />
+            <source srcset={portfolioWebp} type="image/webp" />
+            <img src={portfolioPng} alt="portfolio" />
+          </picture>
 					<div class="ps-portfolio__data">
 						<h3 class="ps-portfolio__title">Something</h3>
 						<p class="ps-portfolio__description">
@@ -71,7 +81,11 @@
 			<SwiperSlide>
 				<!-- Portfolio 3 -->
 				<div class="ps-portfolio__content ps-grid mb-7">
-					<img src={portfolio} alt="portfolio img" class="ps-portfolio__img" />
+					<picture class="ps-portfolio__img">
+            <source srcset={portfolioAvif} type="image/avif" />
+            <source srcset={portfolioWebp} type="image/webp" />
+            <img src={portfolioPng} alt="portfolio" />
+          </picture>
 					<div class="ps-portfolio__data">
 						<h3 class="ps-portfolio__title">Just like this</h3>
 						<p class="ps-portfolio__description">
