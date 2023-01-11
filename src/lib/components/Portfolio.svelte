@@ -6,9 +6,9 @@
 
 	import 'swiper/css/navigation';
 	import 'swiper/css/pagination';
-  import 'swiper/css/mousewheel';
-  import 'swiper/css/keyboard';
-  import 'swiper/css/autoplay';
+	import 'swiper/css/mousewheel';
+	import 'swiper/css/keyboard';
+	import 'swiper/css/autoplay';
 
 	// import required modules
 	import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
@@ -18,14 +18,13 @@
 	<h2 class="ps-section__title">Portfolio</h2>
 	<span class="ps-section__subtitle">What i offer</span>
 	<div class="ps-portfolio__container ps-container">
-    
 		<Swiper
 			cssMode={true}
 			navigation={true}
 			pagination={true}
-      speed={2500}
+			speed={2500}
 			mousewheel={true}
-      autoplay={true}
+			autoplay={true}
 			keyboard={true}
 			modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
 		>
@@ -38,7 +37,10 @@
 						<p class="ps-portfolio__description">
 							Website adaptable to all devices, with ui components and animated interactions.
 						</p>
-						<a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
+						<a
+							href="https://www.google.com/"
+							class="ps-button ps-button__flex ps-button__small ps-portfolio__button"
+						>
 							Demo
 							<i class="uil uil-arrow-right ps-button__icon" />
 						</a>
@@ -54,7 +56,10 @@
 						<p class="ps-portfolio__description">
 							Website adaptable to all devices, with ui components and animated interactions.
 						</p>
-						<a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
+						<a
+							href="https://www.google.com/"
+							class="ps-button ps-button__flex ps-button__small ps-portfolio__button"
+						>
 							Demo
 							<i class="uil uil-arrow-right ps-button__icon" />
 						</a>
@@ -70,7 +75,10 @@
 						<p class="ps-portfolio__description">
 							Website adaptable to all devices, with ui components and animated interactions.
 						</p>
-						<a href="" class="ps-button ps-button__flex ps-button__small ps-portfolio__button">
+						<a
+							href="https://www.google.com/"
+							class="ps-button ps-button__flex ps-button__small ps-portfolio__button"
+						>
 							Demo
 							<i class="uil uil-arrow-right ps-button__icon" />
 						</a>
@@ -82,20 +90,24 @@
 </section>
 
 <style lang="scss">
-  .ps-portfolio__container {
-    /* Override style of swiper slide arrows */
-    :global(.swiper-button-prev), :global(.swiper-button-next) {
-      @apply text-ps-first-color;
-    }
+	.ps-portfolio__container {
+		/* Override style of swiper slide arrows */
+		:global(.swiper-button-prev),
+		:global(.swiper-button-next) {
+			@apply text-ps-first-color;
+		}
 
-    :global(.swiper-horizontal > .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal) {
-      @apply -bottom-1;
-    }
+		:global(
+				.swiper-horizontal
+					> .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal
+			) {
+			@apply -bottom-1;
+		}
 
-    :global(.swiper-pagination .swiper-pagination-bullet-active) {
-      @apply bg-ps-first-color;
-    }
-  }
+		:global(.swiper-pagination .swiper-pagination-bullet-active) {
+			@apply bg-ps-first-color;
+		}
+	}
 
 	.ps-portfolio__content {
 		@apply py-0 px-6 mobile-lg:grid-cols-2 mobile-lg:items-center desktop:gap-x-12;

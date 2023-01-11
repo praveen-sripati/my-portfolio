@@ -1,8 +1,12 @@
+<script lang="ts">
+  import allu from '$lib/assets/images/allu.png';
+</script>
+
 <section class="ps-about ps-section" id="about">
   <h2 class="ps-section__title">About Me</h2>
   <span class="ps-section__subtitle">My introduction</span>
   <div class="ps-about__container ps-container ps-grid">
-    <img src="" alt="" class="ps-about__img">
+    <img src={allu} alt="Right side face look of Allu Arjun" class="ps-about__img">
     <div class="ps-about__data">
       <p class="ps-about__description">
         Web developer, with extensive knowledge and years of experience, working in web technologies and UI/UX design, delivering quality work.
@@ -22,7 +26,7 @@
         </div>
       </div>
       <div class="ps-about__buttons">
-        <a href="" class="ps-button ps-button__flex">
+        <a href={allu} class="ps-button ps-button__flex" download>
           Download CV<i class="uil uil-download-alt ps-button__icon"></i>
         </a>
       </div>

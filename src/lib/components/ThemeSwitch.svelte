@@ -65,7 +65,7 @@
 			@apply text-xl text-[1.4rem] cursor-pointer;
 		}
 		.ps-theme__select-input {
-			@apply absolute left-0 opacity-0 w-full cursor-pointer;
+			@apply absolute left-0 w-full cursor-pointer z-10 bg-transparent text-transparent appearance-none;
 		}
 
 		&:hover {

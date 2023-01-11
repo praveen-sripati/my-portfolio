@@ -38,18 +38,18 @@
 				<div class="ps-testimonial__content">
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
-							<img src={image} alt="" class="ps-testimonial__img" />
+							<img src={image} alt="Allu Arjun" class="ps-testimonial__img" />
 							<div>
 								<h3 class="ps-testimonial__name">Kirankumar Sripati</h3>
 								<span class="ps-testimonial__client">Client</span>
 							</div>
 						</div>
 						<div>
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
 						</div>
 					</div>
 					<p class="ps-testimonial__description">
@@ -72,11 +72,11 @@
 							</div>
 						</div>
 						<div>
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
 						</div>
 					</div>
 					<p class="ps-testimonial__description">
@@ -99,11 +99,11 @@
 							</div>
 						</div>
 						<div>
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
-							<i class="uil uil-star ps-testimonial__icon-start" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
+							<i class="uil uil-star ps-testimonial__icon-star" />
 						</div>
 					</div>
 					<p class="ps-testimonial__description">

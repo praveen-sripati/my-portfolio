@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { handleSmoothScrolling } from '$lib/utils/helpers';
+	import { handleKeyPress, handleSmoothScrolling } from '$lib/utils/helpers';
 	import ThemeSwitch from './ThemeSwitch.svelte';
 
 	let showMenu = true;
@@ -8,53 +8,96 @@
 		handleSmoothScrolling(event);
 		return;
 	}
-
-	
 </script>
 
 <header class="ps-header" id="header">
 	<nav class="ps-nav ps-container">
-		<a href="#home" class="ps-nav__logo" on:click={handleSmoothScrolling}>Praveen</a>
+		<a
+			href="#home"
+			class="ps-nav__logo"
+			on:click={handleSmoothScrolling}
+			on:keypress={handleKeyPress}>Praveen</a
+		>
 		<div class="ps-nav__menu {showMenu ? 'ps-show-menu' : ''}" id="nav-menu">
 			<ul class="ps-nav__list ps-grid">
 				<li class="ps-nav__item">
-					<a href="#home" class="ps-nav__link" on:click={handleMenuToggle}>
+					<a
+						href="#home"
+						class="ps-nav__link"
+						on:click={handleMenuToggle}
+						on:keypress={handleKeyPress}
+					>
 						<i class="uil uil-estate ps-nav__icon" /> Home
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#about" class="ps-nav__link" on:click={handleMenuToggle}>
+					<a
+						href="#about"
+						class="ps-nav__link"
+						on:click={handleMenuToggle}
+						on:keypress={handleKeyPress}
+					>
 						<i class="uil uil-user ps-nav__icon" /> About
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#skills" class="ps-nav__link" on:click={handleMenuToggle}>
+					<a
+						href="#skills"
+						class="ps-nav__link"
+						on:click={handleMenuToggle}
+						on:keypress={handleKeyPress}
+					>
 						<i class="uil uil-file-alt ps-nav__icon" /> Skills
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#services" class="ps-nav__link" on:click={handleMenuToggle}>
+					<a
+						href="#services"
+						class="ps-nav__link"
+						on:click={handleMenuToggle}
+						on:keypress={handleKeyPress}
+					>
 						<i class="uil uil-briefcase-alt ps-nav__icon" /> Services
 					</a>
 				</li>
 				<li class="ps-nav__item">
-					<a href="#portfolio" class="ps-nav__link" on:click={handleMenuToggle}>
+					<a
+						href="#portfolio"
+						class="ps-nav__link"
+						on:click={handleMenuToggle}
+						on:keypress={handleKeyPress}
+					>
 						<i class="uil uil-scenery ps-nav__icon" /> Portfolio
 					</a>
 				</li>
 
 				<li class="ps-nav__item">
-					<a href="#contact" class="ps-nav__link" on:click={handleMenuToggle}>
+					<a
+						href="#contact"
+						class="ps-nav__link"
+						on:click={handleMenuToggle}
+						on:keypress={handleKeyPress}
+					>
 						<i class="uil uil-message ps-nav__icon" /> Contact me
 					</a>
 				</li>
 			</ul>
-			<i class="uil uil-times ps-nav__close" id="ps-nav-close" on:click={handleMenuToggle} />
+			<i
+				class="uil uil-times ps-nav__close"
+				id="ps-nav-close"
+				on:click={handleMenuToggle}
+				on:keypress={handleKeyPress}
+			/>
 		</div>
 		<div class="ps-nav__btns">
 			<!-- Theme select input -->
 			<ThemeSwitch />
-			<div class="ps-nav__toggle" id="ps-nav-toggle" on:click={handleMenuToggle}>
+			<div
+				class="ps-nav__toggle"
+				id="ps-nav-toggle"
+				on:click={handleMenuToggle}
+				on:keypress={handleKeyPress}
+			>
 				<i class="uil uil-apps" />
 			</div>
 		</div>

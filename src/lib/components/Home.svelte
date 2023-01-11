@@ -1,6 +1,6 @@
 <script>
 	import homeBlobImg from '$lib/assets/images/allu.png';
-	import { handleSmoothScrolling } from '$lib/utils/helpers';
+	import { handleKeyPress, handleSmoothScrolling } from '$lib/utils/helpers';
 </script>
 
 <section class="ps-home ps-section" id="home">
@@ -12,13 +12,21 @@
 					class="ps-home__social-icon"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="Praveen's linkedIn link"
 				>
 					<i class="uil uil-linkedin-alt" />
 				</a>
-				<a href="https://github.com/" class="ps-home__social-icon" target="_blank" rel="noreferrer">
+				<a
+					href="https://github.com/"
+					aria-label="Praveen's github link"
+					class="ps-home__social-icon"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<i class="uil uil-github-alt" />
 				</a>
 				<a
+					aria-label="Praveen's instagram link"
 					href="https://www.instagram.com/"
 					class="ps-home__social-icon"
 					target="_blank"
@@ -63,13 +71,19 @@
 					href="#contact"
 					class="ps-button ps-button__flex"
 					on:click={handleSmoothScrolling}
+					on:keypress={handleKeyPress}
 				>
 					Contact Me <i class="uil uil-message ps-button__icon" />
 				</a>
 			</div>
 		</div>
 		<div class="ps-home__scroll">
-			<a href="#about" class="ps-home__scroll-button ps-button__flex" on:click={handleSmoothScrolling}>
+			<a
+				href="#about"
+				class="ps-home__scroll-button ps-button__flex"
+				on:click={handleSmoothScrolling}
+				on:keypress={handleKeyPress}
+			>
 				<i class="uil uil-mouse-alt ps-home__scroll-mouse" />
 				<span class="ps-home__scroll-name">Scroll down</span>
 				<i class="uil uil-arrow-down ps-home__scroll-arrow" />

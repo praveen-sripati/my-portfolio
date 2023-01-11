@@ -28,25 +28,25 @@
 		<form action="" class="ps-contact__form ps-grid">
 			<div class="ps-contact__inputs ps-grid">
 				<div class="ps-contact__content">
-					<label for="name" class="ps-contact__label">Name</label>
-					<input type="text" name="name" class="ps-contact__input" />
+					<label for="nameControl" class="ps-contact__label">Name</label>
+					<input type="text" name="name" class="ps-contact__input" id="nameControl" />
 				</div>
 				<div class="ps-contact__content">
-					<label for="email" class="ps-contact__label">Email</label>
-					<input type="email" name="email" class="ps-contact__input" />
+					<label for="emailControl" class="ps-contact__label">Email</label>
+					<input type="email" name="email" class="ps-contact__input" id="emailControl" />
 				</div>
 			</div>
 			<div class="ps-contact__content">
-				<label for="email" class="ps-contact__label">Project</label>
-				<input type="email" name="email" class="ps-contact__input" />
+				<label for="projectControl" class="ps-contact__label">Project</label>
+				<input type="text" name="project" class="ps-contact__input" id="projectControl" />
 			</div>
 			<div class="ps-contact__content">
-				<label for="email" class="ps-contact__label">Message</label>
-				<textarea name="" id="" cols="0" rows="7" class="ps-contact__input" />
+				<label for="messageControl" class="ps-contact__label">Message</label>
+				<textarea name="message" id="messageControl" cols="0" rows="7" class="ps-contact__input" />
 			</div>
 
 			<div>
-				<a href="#" class="ps-button ps-button__flex">
+				<a href="/" class="ps-button ps-button__flex">
 					Send Message
 					<i class="uil uil-message ps-button__icon" />
 				</a>

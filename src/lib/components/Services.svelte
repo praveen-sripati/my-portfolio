@@ -5,6 +5,42 @@
 	let showUIUXModal = false;
 	let showFrontendModal = false;
 	let showBrandingModal = false;
+
+	// @ts-ignore-next-line
+	function handleKeyPressModalVisibility(event, modalName) {
+		event.preventDefault();
+		if (event.keyCode == 32) {
+			if (modalName == 'uiux') showUIUXModal = true;
+			if (modalName == 'frontend') showFrontendModal = true;
+			if (modalName == 'branding') showBrandingModal = true;
+		}
+		if (event.keyCode == 27) {
+			showUIUXModal = false;
+			showBrandingModal = false;
+			showFrontendModal = false;
+		}
+	}
+
+	// @ts-ignore-next-line
+	function handleKeyPressModalClose(event) {
+		event.preventDefault();
+		if (event.keyCode == 32) {
+			showUIUXModal = false;
+			showBrandingModal = false;
+			showFrontendModal = false;
+		}
+	}
+
+	// @ts-ignore-next-line
+	function handleWindowKeypress(event) {
+		event.preventDefault();
+		if (event.keyCode == 27) {
+      console.log('something')
+			showUIUXModal = false;
+			showBrandingModal = false;
+			showFrontendModal = false;
+		}
+	}
 </script>
 
 <section class="ps-services ps-section" id="services">
@@ -21,12 +57,20 @@
 			<span
 				class="ps-button ps-button__flex ps-button__small ps-button__link ps-services__button"
 				on:click={() => (showUIUXModal = true)}
+				on:keypress={(e) => handleKeyPressModalVisibility(e, 'uiux')}
+				role="button"
+				tabindex="0"
 			>
 				View More
 				<i class="uil uil-arrow-right ps-button__icon" />
 			</span>
 			{#if showUIUXModal}
-				<div class="ps-services__modal" transition:fade>
+				<div
+					class="ps-services__modal"
+					role="dialog"
+					on:keypress={(e) => handleKeyPressModalClose(e)}
+					transition:fade
+				>
 					<div
 						class="ps-services__modal-content"
 						use:clickOutside
@@ -36,7 +80,10 @@
 						<h4 class="ps-services__modal-title">Ui/Ux <br /> Designer</h4>
 						<i
 							class="uil uil-times ps-services__modal-close"
+							role="button"
+							tabindex="0"
 							on:click={() => (showUIUXModal = false)}
+							on:keypress={(e) => handleKeyPressModalClose(e)}
 						/>
 						<ul class="ps-services__modal-services ps-grid">
 							<li class="ps-services__modal-service">
@@ -70,22 +117,28 @@
 			<span
 				class="ps-button ps-button__flex ps-button__small ps-button__link ps-services__button"
 				on:click={() => (showFrontendModal = true)}
+				on:keypress={(e) => handleKeyPressModalVisibility(e, 'frontend')}
+				role="button"
+				tabindex="0"
 			>
 				View More
 				<i class="uil uil-arrow-right ps-button__icon" />
 			</span>
 			{#if showFrontendModal}
-				<div class="ps-services__modal" transition:fade>
+				<div class="ps-services__modal" role="dialog" transition:fade>
 					<div
 						class="ps-services__modal-content"
 						use:clickOutside
 						on:outclick={() => (showFrontendModal = false)}
-            transition:fly={{ y: 50 }}
+						transition:fly={{ y: 50 }}
 					>
 						<h4 class="ps-services__modal-title">Frontend <br /> Developer</h4>
 						<i
 							class="uil uil-times ps-services__modal-close"
+							role="button"
+							tabindex="0"
 							on:click={() => (showFrontendModal = false)}
+							on:keypress={(e) => handleKeyPressModalClose(e)}
 						/>
 						<ul class="ps-services__modal-services ps-grid">
 							<li class="ps-services__modal-service">
@@ -119,22 +172,28 @@
 			<span
 				class="ps-button ps-button__flex ps-button__small ps-button__link ps-services__button"
 				on:click={() => (showBrandingModal = true)}
+				on:keypress={(e) => handleKeyPressModalVisibility(e, 'branding')}
+				role="button"
+				tabindex="0"
 			>
 				View More
 				<i class="uil uil-arrow-right ps-button__icon" />
 			</span>
 			{#if showBrandingModal}
-				<div class="ps-services__modal" transition:fade>
+				<div class="ps-services__modal" role="dialog" transition:fade>
 					<div
 						class="ps-services__modal-content"
 						use:clickOutside
 						on:outclick={() => (showBrandingModal = false)}
-            transition:fly={{ y: 50 }}
+						transition:fly={{ y: 50 }}
 					>
 						<h4 class="ps-services__modal-title">Branding <br /> Designer</h4>
 						<i
 							class="uil uil-times ps-services__modal-close"
+							role="button"
+							tabindex="0"
 							on:click={() => (showBrandingModal = false)}
+							on:keypress={(e) => handleKeyPressModalClose(e)}
 						/>
 						<ul class="ps-services__modal-services ps-grid">
 							<li class="ps-services__modal-service">

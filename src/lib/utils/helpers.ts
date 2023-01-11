@@ -9,3 +9,10 @@ export function handleSmoothScrolling(event: any) {
       behavior: 'smooth'
     });
 }
+
+export function handleKeyPress(event: any) {
+  event.preventDefault();
+  if(event.keyCode == 32){
+    handleSmoothScrolling(event)
+  }
+}

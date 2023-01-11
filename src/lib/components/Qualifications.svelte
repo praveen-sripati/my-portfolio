@@ -7,6 +7,12 @@
 	function handleTabChange(tabIndex: number) {
 		selectedTab = tabIndex;
 	}
+  function handleKeyPressTabChange(event: any, tabIndex: number) {
+    event.preventDefault();
+    if(event.keyCode == 32){
+      handleTabChange(tabIndex);
+    }
+  }
 </script>
 
 <section class="ps-qualification ps-section">
@@ -19,7 +25,9 @@
 					? 'ps-qualification__button_active'
 					: ''}"
 				role="button"
+        tabindex="0"
 				on:click={() => handleTabChange(0)}
+        on:keypress={(e) => handleKeyPressTabChange(e, 0)}
 			>
 				<i class="uil uil-graduation-cap ps-qualification__icon" />
 				Education
@@ -29,7 +37,9 @@
 					? 'ps-qualification__button_active'
 					: ''}"
 				role="button"
+        tabindex="0"
 				on:click={() => handleTabChange(1)}
+        on:keypress={(e) => handleKeyPressTabChange(e, 1)}
 			>
 				<i class="uil uil-briefcase-alt ps-qualification__icon" />
 				Work
