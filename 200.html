@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/my-portfolio/favicon.png" />
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+		<meta name="viewport" content="width=device-width" />
+		<title>My Portfolio</title>
+		<script>
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		</script>
+		<meta http-equiv="content-security-policy" content="">
+		<link rel="modulepreload" href="/my-portfolio/internal/immutable/start-094be45d.js">
+		<link rel="modulepreload" href="/my-portfolio/internal/immutable/chunks/index-feb0f503.js">
+		<link rel="modulepreload" href="/my-portfolio/internal/immutable/chunks/singletons-55baf864.js">
+		<link rel="modulepreload" href="/my-portfolio/internal/immutable/chunks/index-dd54eab0.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+		<script type="module" data-sveltekit-hydrate="45h">
+			import { start } from "/my-portfolio/internal/immutable/start-094be45d.js";
+
+			start({
+				env: {},
+				paths: {"base":"/my-portfolio","assets":"/my-portfolio"},
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				version: "1673462371049"
+			});
+		</script></div>
+	</body>
+	<script>
+		const sections = document.querySelectorAll('section[id]');
+
+		function scrollActive() {
+			const scrollY = window.pageYOffset;
+
+			sections.forEach((current) => {
+				const sectionHeight = current.offsetHeight;
+				const sectionTop = current.offsetTop - 50;
+
+				sectionID = current.getAttribute('id');
+
+				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+					document
+						.querySelector('.ps-nav__menu a[href*=' + sectionID + ']')
+						.classList.add('ps-nav-active-link');
+				} else {
+					document
+						.querySelector('.ps-nav__menu a[href*=' + sectionID + ']')
+						.classList.remove('ps-nav-active-link');
+				}
+			});
+		}
+		window.addEventListener('scroll', scrollActive);
+	</script>
+	<script>
+		function scrollHeader() {
+			const nav = document.getElementById('header');
+
+			if (window.scrollY >= 80) nav?.classList.add('ps-scroll-header');
+			else nav?.classList.remove('ps-scroll-header');
+		}
+
+		window.addEventListener('scroll', scrollHeader);
+	</script>
+	<script>
+		function scrollUp() {
+			const scrollUp = document.getElementById('scroll-up');
+
+			if (window.scrollY >= 560) scrollUp?.classList.add('ps-scroll-show');
+			else scrollUp?.classList.remove('ps-scroll-show');
+		}
+
+		window.addEventListener('scroll', scrollUp);
+	</script>
+</html>
