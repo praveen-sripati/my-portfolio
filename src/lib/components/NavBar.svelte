@@ -93,9 +93,10 @@
 			<i
 				class="uil uil-times ps-nav__close"
 				id="ps-nav-close"
+        role="button"
+        aria-label="Close nav bar"
 				on:click={handleMenuToggle}
 				on:keypress={handleKeyPress}
-        aria-label="Close nav bar"
 			/>
 		</div>
 		<div class="ps-nav__btns">
@@ -104,9 +105,10 @@
 			<div
 				class="ps-nav__toggle"
 				id="ps-nav-toggle"
+        role="button"
+        aria-label="Toggle nav bar"
 				on:click={handleMenuToggle}
 				on:keypress={handleKeyPress}
-        aria-label="Toggle nav bar"
 			>
 				<i class="uil uil-apps" />
 			</div>
