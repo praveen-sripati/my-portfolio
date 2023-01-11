@@ -52,7 +52,7 @@
 		<div class="ps-services__content">
 			<div>
 				<i class="uil uil-web-grid ps-services__icon" />
-				<h3 class="ps-services__title">UI/UX <br /> Designer</h3>
+				<h1 class="ps-services__title">UI/UX <br /> Designer</h1>
 			</div>
 			<span
 				class="ps-button ps-button__flex ps-button__small ps-button__link ps-services__button"
@@ -112,7 +112,7 @@
 		<div class="ps-services__content">
 			<div>
 				<i class="uil uil-arrow ps-services__icon" />
-				<h3 class="ps-services__title">Frontend <br /> Developer</h3>
+				<h1 class="ps-services__title">Frontend <br /> Developer</h1>
 			</div>
 			<span
 				class="ps-button ps-button__flex ps-button__small ps-button__link ps-services__button"
@@ -167,7 +167,7 @@
 		<div class="ps-services__content">
 			<div>
 				<i class="uil uil-pen ps-services__icon" />
-				<h3 class="ps-services__title">Branding <br /> Designer</h3>
+				<h1 class="ps-services__title">Branding <br /> Designer</h1>
 			</div>
 			<span
 				class="ps-button ps-button__flex ps-button__small ps-button__link ps-services__button"

@@ -63,7 +63,7 @@
 			</div>
 			<div class="ps-home__data">
 				<h1 class="ps-home__title">Hi, I'am Praveen</h1>
-				<h3 class="ps-home__subtitle">Hi, I'am Praveen</h3>
+				<h2 class="ps-home__subtitle">Hi, I'am Praveen</h2>
 				<p class="ps-home__description">
 					High level experience in web design and knowledge, producing quality work.
 				</p>

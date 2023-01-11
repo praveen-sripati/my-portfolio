@@ -35,7 +35,7 @@
 							<div class="ps-skills__list ps-grid">
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">HTML</h3>
+										<h1 class="ps-skills__name">HTML</h1>
 										<span class="ps-skills__number">90%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -44,7 +44,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">CSS</h3>
+										<h1 class="ps-skills__name">CSS</h1>
 										<span class="ps-skills__number">80%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -53,7 +53,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Javascript</h3>
+										<h1 class="ps-skills__name">Javascript</h1>
 										<span class="ps-skills__number">60%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -62,7 +62,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Angular</h3>
+										<h1 class="ps-skills__name">Angular</h1>
 										<span class="ps-skills__number">75%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -97,7 +97,7 @@
 							<div class="ps-skills__list ps-grid">
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">PHP</h3>
+										<h1 class="ps-skills__name">PHP</h1>
 										<span class="ps-skills__number">10%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -106,7 +106,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Node.js</h3>
+										<h1 class="ps-skills__name">Node.js</h1>
 										<span class="ps-skills__number">60%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -115,7 +115,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Firebase</h3>
+										<h1 class="ps-skills__name">Firebase</h1>
 										<span class="ps-skills__number">50%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -124,7 +124,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Express</h3>
+										<h1 class="ps-skills__name">Express</h1>
 										<span class="ps-skills__number">65%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -159,7 +159,7 @@
 							<div class="ps-skills__list ps-grid">
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Figma</h3>
+										<h1 class="ps-skills__name">Figma</h1>
 										<span class="ps-skills__number">80%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -168,7 +168,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Sketch</h3>
+										<h1 class="ps-skills__name">Sketch</h1>
 										<span class="ps-skills__number">35%</span>
 									</div>
 									<div class="ps-skills__bar">
@@ -177,7 +177,7 @@
 								</div>
 								<div class="ps-skills__data">
 									<div class="ps-skills__titles">
-										<h3 class="ps-skills__name">Photoshop</h3>
+										<h1 class="ps-skills__name">Photoshop</h1>
 										<span class="ps-skills__number">60%</span>
 									</div>
 									<div class="ps-skills__bar">
