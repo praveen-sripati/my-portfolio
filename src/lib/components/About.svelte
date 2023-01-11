@@ -33,9 +33,9 @@
 				</div>
 			</div>
 			<div class="ps-about__buttons">
-				<!-- <a href={alluPng} class="ps-button ps-button__flex" download>
+				<a href={alluPng} class="ps-button ps-button__flex" download>
 					Download CV<i class="uil uil-download-alt ps-button__icon" />
-				</a> -->
+				</a>
 			</div>
 		</div>
 	</div>
