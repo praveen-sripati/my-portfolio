@@ -34,9 +34,9 @@
 				<!-- Portfolio 1 -->
 				<div class="ps-portfolio__content ps-grid mb-7">
           <picture class="ps-portfolio__img">
-            <source srcset={portfolioAvif} type="image/avif" />
-            <source srcset={portfolioWebp} type="image/webp" />
-            <img src={portfolioPng} alt="portfolio" />
+            <source srcset={portfolioAvif} type="image/avif" width=230 height=345 />
+            <source srcset={portfolioWebp} type="image/webp" width=230 height=345 />
+            <img src={portfolioPng} alt="portfolio" width=230 height=345 />
           </picture>
 					<div class="ps-portfolio__data">
 						<h3 class="ps-portfolio__title">Modern Website</h3>
@@ -58,9 +58,9 @@
 				<!-- Portfolio 2 -->
 				<div class="ps-portfolio__content ps-grid mb-7">
 					<picture class="ps-portfolio__img">
-            <source srcset={portfolioAvif} type="image/avif" />
-            <source srcset={portfolioWebp} type="image/webp" />
-            <img src={portfolioPng} alt="portfolio" />
+            <source srcset={portfolioAvif} type="image/avif" width=230 height=345 />
+            <source srcset={portfolioWebp} type="image/webp" width=230 height=345 />
+            <img src={portfolioPng} alt="portfolio" width=230 height=345 />
           </picture>
 					<div class="ps-portfolio__data">
 						<h3 class="ps-portfolio__title">Something</h3>
@@ -82,9 +82,9 @@
 				<!-- Portfolio 3 -->
 				<div class="ps-portfolio__content ps-grid mb-7">
 					<picture class="ps-portfolio__img">
-            <source srcset={portfolioAvif} type="image/avif" />
-            <source srcset={portfolioWebp} type="image/webp" />
-            <img src={portfolioPng} alt="portfolio" />
+            <source srcset={portfolioAvif} type="image/avif" width=230 height=345 />
+            <source srcset={portfolioWebp} type="image/webp" width=230 height=345 />
+            <img src={portfolioPng} alt="portfolio" width=230 height=345 />
           </picture>
 					<div class="ps-portfolio__data">
 						<h3 class="ps-portfolio__title">Just like this</h3>

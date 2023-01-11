@@ -27,9 +27,9 @@
 				</a>
 			</div>
 			<picture class="ps-project__img">
-				<source srcset={alluAvif} type="image/avif" />
-				<source srcset={alluWebp} type="image/webp" />
-				<img src={alluPng} alt="projects" />
+				<source srcset={alluAvif} type="image/avif" width=232 height=348 />
+				<source srcset={alluWebp} type="image/webp" width=232 height=348 />
+				<img src={alluPng} alt="projects" width=232 height=348 />
 			</picture>
 		</div>
 	</div>

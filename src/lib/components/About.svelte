@@ -9,9 +9,9 @@
 	<span class="ps-section__subtitle">My introduction</span>
 	<div class="ps-about__container ps-container ps-grid">
     <picture class="ps-about__img">
-      <source srcset={alluAvif} type="image/avif" />
-      <source srcset={alluWebp} type="image/webp" />
-      <img src={alluPng} alt="Right side face look of Allu Arjun" />
+      <source srcset={alluAvif} type="image/avif" width=350 height=525 />
+      <source srcset={alluWebp} type="image/webp" width=350 height=525 />
+      <img src={alluPng} alt="Right side face look of Allu Arjun" width=350 height=525 />
     </picture>
 		<div class="ps-about__data">
 			<p class="ps-about__description">

@@ -41,9 +41,9 @@
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
               <picture class="ps-testimonial__avatar">
-                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" />
-                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" />
-                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" />
+                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" width=64 height=64 />
+                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" width=64 height=64 />
+                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" width=64 height=64 />
               </picture>
 							<div>
 								<h3 class="ps-testimonial__name">Kirankumar Sripati</h3>
@@ -72,9 +72,9 @@
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
 							<picture class="ps-testimonial__avatar">
-                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" />
-                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" />
-                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" />
+                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" width=64 height=64 />
+                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" width=64 height=64 />
+                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" width=64 height=64 />
               </picture>
 							<div>
 								<h3 class="ps-testimonial__name">Anand Sripati</h3>
@@ -103,9 +103,9 @@
 					<div class="ps-testimonial__data">
 						<div class="ps-testimonial__header">
 							<picture class="ps-testimonial__avatar">
-                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" />
-                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" />
-                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" />
+                <source srcset={alluAvif} type="image/avif" class="ps-testimonial__img" width=64 height=64 />
+                <source srcset={alluWebp} type="image/webp" class="ps-testimonial__img" width=64 height=64 />
+                <img src={alluPng} alt="Allu Arjun" class="ps-testimonial__img" width=64 height=64 />
               </picture>
 							<div>
 								<h3 class="ps-testimonial__name">Sidboy</h3>
